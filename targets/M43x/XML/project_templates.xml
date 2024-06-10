@@ -1,0 +1,208 @@
+<projects>
+  <project cpu_manufacturer="Nuvoton" cpu_name="" cpu_generic_name="M480" board_manufacturer="" board_name="" name="M480 C/C++ Executable" description="A C/C++ executable for Nuvoton M480." type="Executable" template_name="M480_EXE" template_target="8">
+    <property name="package_dependencies" value="M480" />
+    <configuration name="THUMB Debug" />
+    <configuration name="THUMB Release" />
+    <property name="CMSIS_CORE" value="Yes" />
+    <property name="arm_interwork" value="No" />
+    <property name="c_user_include_directories" value="$(DeviceIncludePath);$(TargetsDir)/M480/CMSIS/Device/M480/StdDriver/inc" />
+    <property name="property_groups_file_path" value="$(TargetsDir)/M480/XML/property_groups.xml" />
+    <propertygroup name="Target" value="M483KGCAE2A" choose="Yes" />
+    <propertygroup name="Placement" value="Flash" choose="Yes" />
+    <property name="arm_target_debug_interface_type" value="ADIv5" />
+    <property name="arm_target_flash_loader_file_path" value="$(DeviceLoaderFile)" configuration="Flash" />
+    <property name="debug_register_definition_file" value="$(DeviceRegisterDefinitionFile)" />
+    <property name="linker_memory_map_file" value="$(DeviceMemoryMapFile)" />
+    <property name="target_reset_script" value="Reset();" />
+    <property name="target_get_partname_script" value="GetPartName()" />
+    <property name="target_match_partname_script" value="MatchPartName(&quot;$(Target)&quot;)" />
+    <property name="target_trace_initialize_script" value="EnableTrace(&quot;$(TraceInterfaceType)&quot;)" />
+    <property name="gcc_entry_point" value="Reset_Handler" />
+    <property name="linker_output_format" />
+    <property name="linker_printf_fmt_level" />
+    <property name="linker_printf_width_precision_supported" />
+    <property name="linker_printf_fp_enabled" />
+    <property name="linker_scanf_fmt_level" />
+    <property name="linker_scanf_fp_enabled" />
+    <property name="linker_scanf_character_group_matching_enabled" />
+    <property name="arm_linker_stack_size" value="256" choose="Yes" />
+    <property name="arm_linker_process_stack_size" value="0" choose="Yes" />
+    <property name="arm_linker_heap_size" value="256" choose="Yes" />
+    <folder name="CMSIS Files">
+      <file name="$(DeviceHeaderFile)" expand="no" />
+      <file name="$(DeviceSystemFile)" expand="no">
+        <property name="default_code_section" value=".init" />
+        <property name="default_const_section" value=".init_rodata" />
+      </file>
+    </folder>
+    <folder name="Script Files">
+      <file name="$(TargetsDir)/M480/Scripts/M480_Target.js" expand="no">
+        <property name="file_type" value="Reset Script" />
+      </file>
+    </folder>
+    <folder name="Source Files" filter="c;cpp;cxx;cc;h;s;asm;inc">
+      <file name="main.cpp" source="$(TargetsDir)/M480/Source/main.cpp" />
+    </folder>
+    <folder name="StdDriver Files">
+      <file name="$(TargetsDir)/M480/CMSIS/Device/M480/StdDriver/src/clk.c" expand="no" />
+      <file name="$(TargetsDir)/M480/CMSIS/Device/M480/StdDriver/src/gpio.c" expand="no" />
+    </folder>
+    <folder name="System Files">
+      <file name="$(StudioDir)/source/thumb_crt0.s" expand="no">
+        <property name="c_preprocessor_definitions" value="" />
+      </file>
+      <file name="$(TargetsDir)/M480/Source/M480_Startup.s" expand="no" />
+      <file name="$(DeviceVectorsFile)" expand="no">
+        <property name="file_type" value="Assembly" />
+      </file>
+    </folder>
+  </project>
+  <project cpu_manufacturer="Nuvoton" cpu_name="" cpu_generic_name="M480" board_manufacturer="" board_name="" name="M480 Assembly Code Only Executable" description="An assembly code only executable for Nuvoton M480." type="Executable" template_name="M480_ASM_EXE" template_target="8">
+    <property name="package_dependencies" value="M480" />
+    <configuration name="THUMB Debug" />
+    <configuration name="THUMB Release" />
+    <property name="CMSIS_CORE" value="Yes" />
+    <property name="arm_interwork" value="No" />
+    <property name="c_user_include_directories" value="$(DeviceIncludePath);$(TargetsDir)/M480/CMSIS/Device/M480/StdDriver/inc" />
+    <property name="property_groups_file_path" value="$(TargetsDir)/M480/XML/property_groups.xml" />
+    <propertygroup name="Target" value="M483KGCAE2A" choose="Yes" />
+    <propertygroup name="Placement" value="Flash" choose="Yes" />
+    <property name="arm_target_debug_interface_type" value="ADIv5" />
+    <property name="arm_target_flash_loader_file_path" value="$(DeviceLoaderFile)" configuration="Flash" />
+    <property name="debug_register_definition_file" value="$(DeviceRegisterDefinitionFile)" />
+    <property name="linker_memory_map_file" value="$(DeviceMemoryMapFile)" />
+    <property name="target_reset_script" value="Reset();" />
+    <property name="target_get_partname_script" value="GetPartName()" />
+    <property name="target_match_partname_script" value="MatchPartName(&quot;$(Target)&quot;)" />
+    <property name="target_trace_initialize_script" value="EnableTrace(&quot;$(TraceInterfaceType)&quot;)" />
+    <property name="gcc_entry_point" value="Reset_Handler" />
+    <property name="arm_linker_stack_size" value="256" choose="Yes" />
+    <property name="arm_linker_process_stack_size" value="0" choose="Yes" />
+    <property name="arm_linker_heap_size" value="0" choose="Yes" />
+    <property name="debug_initial_breakpoint" value="_start" />
+    <property name="debug_startup_completion_point" value="_start" />
+    <property name="link_include_standard_libraries" value="No" />
+    <folder name="Script Files">
+      <file name="$(TargetsDir)/M480/Scripts/M480_Target.js" expand="no">
+        <property name="file_type" value="Reset Script" />
+      </file>
+    </folder>
+    <folder name="Source Files" filter="c;cpp;cxx;cc;h;s;asm;inc">
+      <file name="start.s" source="$(TargetsDir)/M480/Source/start.s" />
+    </folder>
+    <folder name="System Files">
+      <property name="c_preprocessor_definitions" value="NO_SYSTEM_INIT" />
+      <file name="$(TargetsDir)/M480/Source/M480_Startup.s" expand="no" />
+      <file name="$(DeviceVectorsFile)" expand="no">
+        <property name="file_type" value="Assembly" />
+      </file>
+    </folder>
+  </project>
+  <project cpu_manufacturer="Nuvoton" cpu_name="" cpu_generic_name="M480" board_manufacturer="" board_name="" name="M480 Externally Built Executable" description="An externally built executable for Nuvoton M480." type="Externally Built Executable" template_name="M480_EXT_EXE" template_target="8">
+    <property name="package_dependencies" value="M480" />
+    <configuration name="THUMB Debug" />
+    <configuration name="THUMB Release" />
+    <property name="CMSIS_CORE" value="Yes" />
+    <property name="property_groups_file_path" value="$(TargetsDir)/M480/XML/property_groups.xml" />
+    <propertygroup name="Target" value="M483KGCAE2A" choose="Yes" />
+    <propertygroup name="Placement" value="Flash" choose="Yes" />
+    <property name="arm_target_debug_interface_type" value="ADIv5" />
+    <property name="arm_target_flash_loader_file_path" value="$(DeviceLoaderFile)" configuration="Flash" />
+    <property name="debug_register_definition_file" value="$(DeviceRegisterDefinitionFile)" />
+    <property name="linker_memory_map_file" value="$(DeviceMemoryMapFile)" />
+    <property name="target_reset_script" value="Reset();" />
+    <property name="target_get_partname_script" value="GetPartName()" />
+    <property name="target_match_partname_script" value="MatchPartName(&quot;$(Target)&quot;)" />
+    <property name="target_trace_initialize_script" value="EnableTrace(&quot;$(TraceInterfaceType)&quot;)" />
+    <property name="external_build_file_name" />
+    <folder name="Script Files">
+      <file name="$(TargetsDir)/M480/Scripts/M480_Target.js" expand="no">
+        <property name="file_type" value="Reset Script" />
+      </file>
+    </folder>
+  </project>
+  <project cpu_manufacturer="Nuvoton" cpu_name="" cpu_generic_name="M480" board_manufacturer="" board_name="" name="M480 CTL Executable" description="A CrossWorks Tasking Library executable for Nuvoton M480." type="Executable" template_name="M480_CTL_EXE" template_target="8">
+    <property name="package_dependencies" value="M480" />
+    <configuration name="THUMB Debug" />
+    <configuration name="THUMB Release" />
+    <property name="CMSIS_CORE" value="Yes" />
+    <property name="arm_interwork" value="No" />
+    <property name="c_user_include_directories" value="$(DeviceIncludePath);$(TargetsDir)/M480/CMSIS/Device/M480/StdDriver/inc" />
+    <property name="property_groups_file_path" value="$(TargetsDir)/M480/XML/property_groups.xml" />
+    <propertygroup name="Target" value="M483KGCAE2A" choose="Yes" />
+    <propertygroup name="Placement" value="Flash" choose="Yes" />
+    <property name="arm_target_debug_interface_type" value="ADIv5" />
+    <property name="arm_target_flash_loader_file_path" value="$(DeviceLoaderFile)" configuration="Flash" />
+    <property name="debug_register_definition_file" value="$(DeviceRegisterDefinitionFile)" />
+    <property name="linker_memory_map_file" value="$(DeviceMemoryMapFile)" />
+    <property name="target_reset_script" value="Reset();" />
+    <property name="target_get_partname_script" value="GetPartName()" />
+    <property name="target_match_partname_script" value="MatchPartName(&quot;$(Target)&quot;)" />
+    <property name="target_trace_initialize_script" value="EnableTrace(&quot;$(TraceInterfaceType)&quot;)" />
+    <property name="gcc_entry_point" value="Reset_Handler" />
+    <property name="linker_output_format" />
+    <property name="linker_printf_fmt_level" />
+    <property name="linker_printf_width_precision_supported" />
+    <property name="linker_printf_fp_enabled" />
+    <property name="linker_scanf_fmt_level" />
+    <property name="linker_scanf_fp_enabled" />
+    <property name="linker_scanf_character_group_matching_enabled" />
+    <property name="arm_linker_stack_size" value="256" choose="Yes" />
+    <property name="arm_linker_process_stack_size" value="256" choose="Yes" />
+    <property name="arm_linker_heap_size" value="256" choose="Yes" />
+    <propertygroup name="libctl" value="Yes" />
+    <folder name="CMSIS Files">
+      <file name="$(DeviceHeaderFile)" expand="no" />
+      <file name="$(DeviceSystemFile)" expand="no">
+        <property name="default_code_section" value=".init" />
+        <property name="default_const_section" value=".init_rodata" />
+      </file>
+    </folder>
+    <folder name="CTL Files">
+      <file name="$(TargetsDir)/M480/Source/ctl_m480.c" expand="no" />
+      <file name="$(StudioDir)/ctl/source/ctl_board.c" expand="no" />
+    </folder>
+    <folder name="Script Files">
+      <file name="$(TargetsDir)/M480/Scripts/M480_Target.js" expand="no">
+        <property name="file_type" value="Reset Script" />
+      </file>
+      <file name="$(StudioDir)/ctl/source/threads.js" expand="no" />
+    </folder>
+    <folder name="Source Files" filter="c;cpp;cxx;cc;h;s;asm;inc">
+      <file name="main_ctl.c" source="$(StudioDir)/ctl/source/main_ctl.c" />
+    </folder>
+    <folder name="StdDriver Files">
+      <file name="$(TargetsDir)/M480/CMSIS/Device/M480/StdDriver/src/clk.c" expand="no" />
+      <file name="$(TargetsDir)/M480/CMSIS/Device/M480/StdDriver/src/gpio.c" expand="no" />
+    </folder>
+    <folder name="System Files">
+      <file name="$(StudioDir)/source/thumb_crt0.s" expand="no">
+        <property name="c_preprocessor_definitions" value="" />
+      </file>
+      <file name="$(TargetsDir)/M480/Source/M480_Startup.s" expand="no" />
+      <file name="$(DeviceVectorsFile)" expand="no">
+        <property name="file_type" value="Assembly" />
+      </file>
+    </folder>
+  </project>
+  <project cpu_manufacturer="Nuvoton" cpu_name="" cpu_generic_name="M480" board_manufacturer="" board_name="" name="M480 Library" description="A library for Nuvoton M480." type="Library" template_name="M480_LIB" template_target="8">
+    <property name="package_dependencies" value="M480" />
+    <configuration name="THUMB Debug" />
+    <configuration name="THUMB Release" />
+    <property name="CMSIS_CORE" value="Yes" />
+    <property name="arm_interwork" value="No" />
+    <property name="c_user_include_directories" value="$(DeviceIncludePath);$(TargetsDir)/M480/CMSIS/Device/M480/StdDriver/inc" />
+    <property name="property_groups_file_path" value="$(TargetsDir)/M480/XML/property_groups.xml" />
+    <propertygroup name="Target" value="M483KGCAE2A" choose="Yes" />
+    <propertygroup name="Placement" value="Flash" choose="Yes" />
+    <property name="arm_target_debug_interface_type" value="ADIv5" />
+    <property name="arm_target_flash_loader_file_path" value="$(DeviceLoaderFile)" configuration="Flash" />
+    <property name="debug_register_definition_file" value="$(DeviceRegisterDefinitionFile)" />
+    <property name="linker_memory_map_file" value="$(DeviceMemoryMapFile)" />
+    <property name="target_reset_script" value="Reset();" />
+    <property name="target_get_partname_script" value="GetPartName()" />
+    <property name="target_match_partname_script" value="MatchPartName(&quot;$(Target)&quot;)" />
+    <property name="target_trace_initialize_script" value="EnableTrace(&quot;$(TraceInterfaceType)&quot;)" />
+    <folder name="Source Files" filter="c;cpp;cxx;cc;h;s;asm;inc" />
+  </project>
+</projects>

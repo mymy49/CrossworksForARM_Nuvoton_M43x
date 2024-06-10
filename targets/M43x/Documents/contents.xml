@@ -1,0 +1,74 @@
+<help>
+ <contents>
+  <content url="doc_home.htm">
+   <content url="creating_projects.htm"/>
+   <content url="sample_solutions.htm"/>
+   <content url="project_properties.htm"/>
+   <content url="project_templates.htm"/>
+   <content url="devices.htm">
+    <content url="M480_devices.htm">
+     <content url="M481ZGDAE_device.htm"/>
+     <content url="M481ZGAAE_device.htm"/>
+     <content url="M481ZIDAE_device.htm"/>
+     <content url="M481LGAAE_device.htm"/>
+     <content url="M481LIDAE_device.htm"/>
+     <content url="M481SGAAE_device.htm"/>
+     <content url="M481SIDAE_device.htm"/>
+     <content url="M481ZG8AE_device.htm"/>
+     <content url="M481ZGCAE_device.htm"/>
+     <content url="M481ZE8AE_device.htm"/>
+     <content url="M481LG8AE_device.htm"/>
+     <content url="M481LGCAE_device.htm"/>
+     <content url="M481LE8AE_device.htm"/>
+     <content url="M481SG8AE_device.htm"/>
+     <content url="M481SGCAE_device.htm"/>
+     <content url="M481SE8AE_device.htm"/>
+     <content url="M481SG8AE2A_device.htm"/>
+     <content url="M481SGCAE2A_device.htm"/>
+     <content url="M482ZIDAE_device.htm"/>
+     <content url="M482LGAAE_device.htm"/>
+     <content url="M482LIDAE_device.htm"/>
+     <content url="M482SGAAE_device.htm"/>
+     <content url="M482SIDAE_device.htm"/>
+     <content url="M482KGAAE_device.htm"/>
+     <content url="M482KIDAE_device.htm"/>
+     <content url="M482ZG8AE_device.htm"/>
+     <content url="M482ZGCAE_device.htm"/>
+     <content url="M482ZE8AE_device.htm"/>
+     <content url="M482LG8AE_device.htm"/>
+     <content url="M482LGCAE_device.htm"/>
+     <content url="M482LE8AE_device.htm"/>
+     <content url="M482SG8AE_device.htm"/>
+     <content url="M482SGCAE_device.htm"/>
+     <content url="M482SE8AE_device.htm"/>
+     <content url="M482KGCAE_device.htm"/>
+     <content url="M483SGAAE_device.htm"/>
+     <content url="M483SIDAE_device.htm"/>
+     <content url="M483KIDAE_device.htm"/>
+     <content url="M483SG8AE_device.htm"/>
+     <content url="M483SGCAE_device.htm"/>
+     <content url="M483SE8AE_device.htm"/>
+     <content url="M483SGCAE2A_device.htm"/>
+     <content url="M483SG8AE2A_device.htm"/>
+     <content url="M483KGCAE_device.htm"/>
+     <content url="M483KGCAE2A_device.htm"/>
+     <content url="M483KG8AE2A_device.htm"/>
+     <content url="M484SGAAE_device.htm"/>
+     <content url="M484SGAAE2U_device.htm"/>
+     <content url="M484SIDAE_device.htm"/>
+     <content url="M484SIDAE2U_device.htm"/>
+     <content url="M484KIDAE_device.htm"/>
+     <content url="M485ZIDAE_device.htm"/>
+     <content url="M485LIDAE_device.htm"/>
+     <content url="M485SIDAE_device.htm"/>
+     <content url="M485KIDAE_device.htm"/>
+     <content url="M487SGAAE_device.htm"/>
+     <content url="M487SIDAE_device.htm"/>
+     <content url="M487KIDAE_device.htm"/>
+     <content url="M487JIDAE_device.htm"/>
+     <content url="M487KMCAN_device.htm"/>
+    </content>
+   </content>
+  </content>
+ </contents>
+</help>
