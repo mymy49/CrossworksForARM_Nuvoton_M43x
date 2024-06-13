@@ -1,434 +1,357 @@
 <!DOCTYPE CrossStudio_Package_Description_File>
-<package crossstudio_versions="8:4-" version="4.0" dependencies="CMSIS" filetype="hzq" cpu_family="M480" web-publish-files="targets/M480/Documents/*" author="Rowley Associates Ltd" name="M480" cpu_manufacturer="Nuvoton" build_version="2023012501.13443;crossworks_v4;crossworks_v4" date="2023-01-25T13:23:51">
-  <group title="Sample Solutions">
-    <file title="M480 Samples Solution" file_name="$(TargetsDir)/M480/Samples/M480_Samples.hzp"/>
-    <file title="M480 CMSIS-DSP Samples Solution" file_name="$(TargetsDir)/M480/Samples/M480_CMSIS_DSP_Samples.hzp"/>
-  </group>
-  <group title="System Solutions">
-    <file title="M480 Loader Solution" file_name="$(TargetsDir)/M480/Loader/Loader.hzp"/>
-  </group>
-  <group title="System Files">
-    <file title="M480 Startup Code" file_name="$(TargetsDir)/M480/Source/M480_Startup.s"/>
-    <file title="M480 Target Script" file_name="$(TargetsDir)/M480/Scripts/M480_Target.js"/>
-    <file title="M481_v1 Vector Table" file_name="$(TargetsDir)/M480/Source/M481_v1_Vectors.s"/>
-  </group>
-  <group title="HTML Files">
-    <file web-publish="1" title="M480 CPU Support Package Guide" external-viewer="1" file_name="$(TargetsDir)/M480/Documents/index.htm"/>
-  </group>
-  <group title="PDF Files">
-    <file web-publish="1" title="M480 CPU Support Package Guide" external-viewer="1" file_name="$(TargetsDir)/M480/Documents/M480_CPU_Support_Package_Guide.pdf"/>
-  </group>
-  <history>
-    <version name="4.0">
-      <description>Initial Release.</description>
-    </version>
-  </history>
-  <targets>
-    <category name="M480">
-      <cpu name="M481ZGDAE"/>
-      <cpu name="M481ZGAAE"/>
-      <cpu name="M481ZIDAE"/>
-      <cpu name="M481LGAAE"/>
-      <cpu name="M481LIDAE"/>
-      <cpu name="M481SGAAE"/>
-      <cpu name="M481SIDAE"/>
-      <cpu name="M481ZG8AE"/>
-      <cpu name="M481ZGCAE"/>
-      <cpu name="M481ZE8AE"/>
-      <cpu name="M481LG8AE"/>
-      <cpu name="M481LGCAE"/>
-      <cpu name="M481LE8AE"/>
-      <cpu name="M481SG8AE"/>
-      <cpu name="M481SGCAE"/>
-      <cpu name="M481SE8AE"/>
-      <cpu name="M481SG8AE2A"/>
-      <cpu name="M481SGCAE2A"/>
-      <cpu name="M482ZIDAE"/>
-      <cpu name="M482LGAAE"/>
-      <cpu name="M482LIDAE"/>
-      <cpu name="M482SGAAE"/>
-      <cpu name="M482SIDAE"/>
-      <cpu name="M482KGAAE"/>
-      <cpu name="M482KIDAE"/>
-      <cpu name="M482ZG8AE"/>
-      <cpu name="M482ZGCAE"/>
-      <cpu name="M482ZE8AE"/>
-      <cpu name="M482LG8AE"/>
-      <cpu name="M482LGCAE"/>
-      <cpu name="M482LE8AE"/>
-      <cpu name="M482SG8AE"/>
-      <cpu name="M482SGCAE"/>
-      <cpu name="M482SE8AE"/>
-      <cpu name="M482KGCAE"/>
-      <cpu name="M483SGAAE"/>
-      <cpu name="M483SIDAE"/>
-      <cpu name="M483KIDAE"/>
-      <cpu name="M483SG8AE"/>
-      <cpu name="M483SGCAE"/>
-      <cpu name="M483SE8AE"/>
-      <cpu name="M483SGCAE2A"/>
-      <cpu name="M483SG8AE2A"/>
-      <cpu name="M483KGCAE"/>
-      <cpu name="M483KGCAE2A"/>
-      <cpu name="M483KG8AE2A"/>
-      <cpu name="M484SGAAE"/>
-      <cpu name="M484SGAAE2U"/>
-      <cpu name="M484SIDAE"/>
-      <cpu name="M484SIDAE2U"/>
-      <cpu name="M484KIDAE"/>
-      <cpu name="M485ZIDAE"/>
-      <cpu name="M485LIDAE"/>
-      <cpu name="M485SIDAE"/>
-      <cpu name="M485KIDAE"/>
-      <cpu name="M487SGAAE"/>
-      <cpu name="M487SIDAE"/>
-      <cpu name="M487KIDAE"/>
-      <cpu name="M487JIDAE"/>
-      <cpu name="M487KMCAN"/>
-    </category>
-  </targets>
-  <installed_file file_name="packages/M480_package.xml" crc32="0x0"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/Include/M480.h" crc32="0x69219ab4"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/Include/NuMicro.h" crc32="0x9f0dbd86"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/Include/acmp_reg.h" crc32="0x5c41920b"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/Include/bpwm_reg.h" crc32="0x5693e5ad"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/Include/can_reg.h" crc32="0x7403ee57"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/Include/ccap_reg.h" crc32="0x7985dc14"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/Include/clk_reg.h" crc32="0xfe4979a5"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/Include/crc_reg.h" crc32="0xe409b5ba"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/Include/crypto_reg.h" crc32="0xdfd20a3b"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/Include/dac_reg.h" crc32="0x736beb41"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/Include/eadc_reg.h" crc32="0x2bedc4a1"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/Include/ebi_reg.h" crc32="0xac6f7143"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/Include/ecap_reg.h" crc32="0xd7434911"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/Include/emac_reg.h" crc32="0x885585f6"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/Include/epwm_reg.h" crc32="0x25b67782"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/Include/fmc_reg.h" crc32="0x11439"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/Include/gpio_reg.h" crc32="0x1ad30d92"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/Include/hsotg_reg.h" crc32="0xfce6ab7d"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/Include/hsusbd_reg.h" crc32="0x38c9bcdd"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/Include/hsusbh_reg.h" crc32="0x177e2405"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/Include/i2c_reg.h" crc32="0xe9419614"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/Include/i2s_reg.h" crc32="0x98c05d67"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/Include/opa_reg.h" crc32="0xbdb15506"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/Include/otg_reg.h" crc32="0x298e0c01"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/Include/pdma_reg.h" crc32="0xa94cd367"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/Include/qei_reg.h" crc32="0x37f75c70"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/Include/qspi_reg.h" crc32="0x4077d362"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/Include/rtc_reg.h" crc32="0xcf0c8b19"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/Include/sc_reg.h" crc32="0x136471b9"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/Include/sdh_reg.h" crc32="0x6b6e6f88"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/Include/spi_reg.h" crc32="0x7d0566f4"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/Include/spim_reg.h" crc32="0x14cbc3b6"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/Include/sys_reg.h" crc32="0xa07aa55a"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/Include/system_M480.h" crc32="0x3b450497"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/Include/timer_reg.h" crc32="0xd772c346"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/Include/trng_reg.h" crc32="0x5fd2e5bb"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/Include/uart_reg.h" crc32="0x29edbcc9"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/Include/ui2c_reg.h" crc32="0x89d56c05"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/Include/usbd_reg.h" crc32="0x6d8be0b8"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/Include/usbh_reg.h" crc32="0x5ae56731"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/Include/uspi_reg.h" crc32="0xfc890eb8"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/Include/uuart_reg.h" crc32="0xdc69710a"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/Include/wdt_reg.h" crc32="0xb517b9c4"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/Include/wwdt_reg.h" crc32="0x84d44ade"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/Source/system_M480.c" crc32="0x63954548"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/acmp.h" crc32="0xaaa17e00"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/bpwm.h" crc32="0xd7c8645a"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/can.h" crc32="0x9a323a25"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/ccap.h" crc32="0xa3866d71"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/clk.h" crc32="0xa1548c41"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/crc.h" crc32="0xdcab8ae1"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/crypto.h" crc32="0x5c5576eb"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/dac.h" crc32="0xd84d7d9e"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/eadc.h" crc32="0x3f3299ac"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/ebi.h" crc32="0x4c5fa3de"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/ecap.h" crc32="0xe173e37d"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/emac.h" crc32="0xd8e6bfc5"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/epwm.h" crc32="0x2ce79ec1"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/fmc.h" crc32="0x584bf5c4"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/gpio.h" crc32="0x56ae0776"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/hsotg.h" crc32="0xc3f6a03"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/hsusbd.h" crc32="0x44b9d101"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/i2c.h" crc32="0xbd5e9d0e"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/i2s.h" crc32="0x3723fdfa"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/opa.h" crc32="0xc47e02dd"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/otg.h" crc32="0xb506068a"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/pdma.h" crc32="0x47eb5ee9"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/qei.h" crc32="0x30a405dd"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/qspi.h" crc32="0x719f1379"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/rtc.h" crc32="0x1e565d61"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/sc.h" crc32="0x863dd09b"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/scuart.h" crc32="0xe136b191"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/sdh.h" crc32="0x3b3bda26"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/spi.h" crc32="0x2bdd1dec"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/spim.h" crc32="0x61207078"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/sys.h" crc32="0xd5da07c8"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/timer.h" crc32="0x43c3e77d"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/timer_pwm.h" crc32="0x470ca270"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/trng.h" crc32="0x58a7b897"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/uart.h" crc32="0x1325880d"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/usbd.h" crc32="0x565f66eb"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/usci_i2c.h" crc32="0x3a8d99f"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/usci_spi.h" crc32="0x5055b5d2"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/usci_uart.h" crc32="0xeea93830"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/wdt.h" crc32="0x42d881d9"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/wwdt.h" crc32="0x3b3f4ebe"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/src/acmp.c" crc32="0x80ccf60b"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/src/bpwm.c" crc32="0x26e035c5"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/src/can.c" crc32="0xda876d2d"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/src/ccap.c" crc32="0xd0f04abc"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/src/clk.c" crc32="0x5993d64f"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/src/crc.c" crc32="0x9c6f2612"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/src/crypto.c" crc32="0x67a9767d"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/src/dac.c" crc32="0x5bdbc503"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/src/eadc.c" crc32="0x21540143"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/src/ebi.c" crc32="0xd10ed1ab"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/src/ecap.c" crc32="0x467c86cf"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/src/emac.c" crc32="0xba13b43"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/src/epwm.c" crc32="0x9f9ca78b"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/src/fmc.c" crc32="0x72507a6b"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/src/gpio.c" crc32="0x8f673b5e"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/src/hsusbd.c" crc32="0x96edf58e"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/src/i2c.c" crc32="0x5670a758"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/src/i2s.c" crc32="0x29fb1d96"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/src/pdma.c" crc32="0x664fdb09"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/src/qei.c" crc32="0xdb2cc27e"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/src/qspi.c" crc32="0x3e8ae254"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/src/retarget.c" crc32="0x22ae2fc7"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/src/rtc.c" crc32="0x3b417de2"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/src/sc.c" crc32="0x5c6ec82d"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/src/scuart.c" crc32="0x64995866"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/src/sdh.c" crc32="0x46ce0fac"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/src/spi.c" crc32="0xcf259731"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/src/spim.c" crc32="0xb54d5374"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/src/sys.c" crc32="0xaf848657"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/src/timer.c" crc32="0x998900f3"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/src/timer_pwm.c" crc32="0x7c8bb32d"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/src/trng.c" crc32="0xb28c279e"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/src/uart.c" crc32="0x3035b84f"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/src/usbd.c" crc32="0x7d792f82"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/src/usci_i2c.c" crc32="0x43b8b45a"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/src/usci_spi.c" crc32="0x83fc22d3"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/src/usci_uart.c" crc32="0x5c035f18"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/src/wdt.c" crc32="0xa15a6050"/>
-  <installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/src/wwdt.c" crc32="0x86b51625"/>
-  <installed_file file_name="targets/M480/CMSIS/Flash/M481_AP_128.FLM" crc32="0xd62bfc5"/>
-  <installed_file file_name="targets/M480/CMSIS/Flash/M481_AP_256.FLM" crc32="0x6f7eb33e"/>
-  <installed_file file_name="targets/M480/CMSIS/Flash/M481_AP_512.FLM" crc32="0x2f5d6e04"/>
-  <installed_file file_name="targets/M480/CMSIS/Flash/M481_LD_4.FLM" crc32="0xf16fd976"/>
-  <installed_file file_name="targets/M480/Documents/M480_CPU_Support_Package_Guide.pdf" crc32="0x7961ae4e"/>
-  <installed_file file_name="targets/M480/Documents/M480_devices.htm" crc32="0x5608b15b"/>
-  <installed_file file_name="targets/M480/Documents/M481LE8AE_device.htm" crc32="0xc5867215"/>
-  <installed_file file_name="targets/M480/Documents/M481LG8AE_device.htm" crc32="0x8d479bf0"/>
-  <installed_file file_name="targets/M480/Documents/M481LGAAE_device.htm" crc32="0x3c089a40"/>
-  <installed_file file_name="targets/M480/Documents/M481LGCAE_device.htm" crc32="0x1188f341"/>
-  <installed_file file_name="targets/M480/Documents/M481LIDAE_device.htm" crc32="0xfc9574b"/>
-  <installed_file file_name="targets/M480/Documents/M481SE8AE_device.htm" crc32="0xf6cb00c8"/>
-  <installed_file file_name="targets/M480/Documents/M481SG8AE2A_device.htm" crc32="0xef604604"/>
-  <installed_file file_name="targets/M480/Documents/M481SG8AE_device.htm" crc32="0xbe0ae92d"/>
-  <installed_file file_name="targets/M480/Documents/M481SGAAE_device.htm" crc32="0xf45e89d"/>
-  <installed_file file_name="targets/M480/Documents/M481SGCAE2A_device.htm" crc32="0x93358c3f"/>
-  <installed_file file_name="targets/M480/Documents/M481SGCAE_device.htm" crc32="0x22c5819c"/>
-  <installed_file file_name="targets/M480/Documents/M481SIDAE_device.htm" crc32="0x3c842596"/>
-  <installed_file file_name="targets/M480/Documents/M481ZE8AE_device.htm" crc32="0xe1ab5b77"/>
-  <installed_file file_name="targets/M480/Documents/M481ZG8AE_device.htm" crc32="0xa96ab292"/>
-  <installed_file file_name="targets/M480/Documents/M481ZGAAE_device.htm" crc32="0x1825b322"/>
-  <installed_file file_name="targets/M480/Documents/M481ZGCAE_device.htm" crc32="0x35a5da23"/>
-  <installed_file file_name="targets/M480/Documents/M481ZGDAE_device.htm" crc32="0x5c6e156b"/>
-  <installed_file file_name="targets/M480/Documents/M481ZIDAE_device.htm" crc32="0x2be47e29"/>
-  <installed_file file_name="targets/M480/Documents/M482KGAAE_device.htm" crc32="0xe2c775d0"/>
-  <installed_file file_name="targets/M480/Documents/M482KGCAE_device.htm" crc32="0xcf471cd1"/>
-  <installed_file file_name="targets/M480/Documents/M482KIDAE_device.htm" crc32="0xd106b8db"/>
-  <installed_file file_name="targets/M480/Documents/M482LE8AE_device.htm" crc32="0x1669ab10"/>
-  <installed_file file_name="targets/M480/Documents/M482LG8AE_device.htm" crc32="0x5ea842f5"/>
-  <installed_file file_name="targets/M480/Documents/M482LGAAE_device.htm" crc32="0xefe74345"/>
-  <installed_file file_name="targets/M480/Documents/M482LGCAE_device.htm" crc32="0xc2672a44"/>
-  <installed_file file_name="targets/M480/Documents/M482LIDAE_device.htm" crc32="0xdc268e4e"/>
-  <installed_file file_name="targets/M480/Documents/M482SE8AE_device.htm" crc32="0x2524d9cd"/>
-  <installed_file file_name="targets/M480/Documents/M482SG8AE_device.htm" crc32="0x6de53028"/>
-  <installed_file file_name="targets/M480/Documents/M482SGAAE_device.htm" crc32="0xdcaa3198"/>
-  <installed_file file_name="targets/M480/Documents/M482SGCAE_device.htm" crc32="0xf12a5899"/>
-  <installed_file file_name="targets/M480/Documents/M482SIDAE_device.htm" crc32="0xef6bfc93"/>
-  <installed_file file_name="targets/M480/Documents/M482ZE8AE_device.htm" crc32="0x32448272"/>
-  <installed_file file_name="targets/M480/Documents/M482ZG8AE_device.htm" crc32="0x7a856b97"/>
-  <installed_file file_name="targets/M480/Documents/M482ZGCAE_device.htm" crc32="0xe64a0326"/>
-  <installed_file file_name="targets/M480/Documents/M482ZIDAE_device.htm" crc32="0xf80ba72c"/>
-  <installed_file file_name="targets/M480/Documents/M483KG8AE2A_device.htm" crc32="0x1ca5ec3d"/>
-  <installed_file file_name="targets/M480/Documents/M483KGCAE2A_device.htm" crc32="0xed5f74c5"/>
-  <installed_file file_name="targets/M480/Documents/M483KGCAE_device.htm" crc32="0x9f387963"/>
-  <installed_file file_name="targets/M480/Documents/M483KIDAE_device.htm" crc32="0x63e304b5"/>
-  <installed_file file_name="targets/M480/Documents/M483SE8AE_device.htm" crc32="0x97c165a3"/>
-  <installed_file file_name="targets/M480/Documents/M483SG8AE2A_device.htm" crc32="0xba60667"/>
-  <installed_file file_name="targets/M480/Documents/M483SG8AE_device.htm" crc32="0xdf008c46"/>
-  <installed_file file_name="targets/M480/Documents/M483SGAAE_device.htm" crc32="0x6e4f8df6"/>
-  <installed_file file_name="targets/M480/Documents/M483SGCAE2A_device.htm" crc32="0x77f3cc5c"/>
-  <installed_file file_name="targets/M480/Documents/M483SGCAE_device.htm" crc32="0x43cfe4f7"/>
-  <installed_file file_name="targets/M480/Documents/M483SIDAE_device.htm" crc32="0x5d8e40fd"/>
-  <installed_file file_name="targets/M480/Documents/M484KIDAE_device.htm" crc32="0x72181766"/>
-  <installed_file file_name="targets/M480/Documents/M484SGAAE2U_device.htm" crc32="0xa98ad0c"/>
-  <installed_file file_name="targets/M480/Documents/M484SGAAE_device.htm" crc32="0x7fb49e25"/>
-  <installed_file file_name="targets/M480/Documents/M484SIDAE2U_device.htm" crc32="0x12e2c523"/>
-  <installed_file file_name="targets/M480/Documents/M484SIDAE_device.htm" crc32="0x4c75532e"/>
-  <installed_file file_name="targets/M480/Documents/M485KIDAE_device.htm" crc32="0xc0fdab08"/>
-  <installed_file file_name="targets/M480/Documents/M485LIDAE_device.htm" crc32="0xcddd9d9d"/>
-  <installed_file file_name="targets/M480/Documents/M485SIDAE_device.htm" crc32="0xfe90ef40"/>
-  <installed_file file_name="targets/M480/Documents/M485ZIDAE_device.htm" crc32="0xe9f0b4ff"/>
-  <installed_file file_name="targets/M480/Documents/M487JIDAE_device.htm" crc32="0xa34ca9e4"/>
-  <installed_file file_name="targets/M480/Documents/M487KIDAE_device.htm" crc32="0xa1f7ce63"/>
-  <installed_file file_name="targets/M480/Documents/M487KMCAN_device.htm" crc32="0x89516c40"/>
-  <installed_file file_name="targets/M480/Documents/M487SGAAE_device.htm" crc32="0xac5b4720"/>
-  <installed_file file_name="targets/M480/Documents/M487SIDAE_device.htm" crc32="0x9f9a8a2b"/>
-  <installed_file file_name="targets/M480/Documents/contents.xml" crc32="0x29a7d9f5"/>
-  <installed_file file_name="targets/M480/Documents/creating_projects.htm" crc32="0xe3a7eefc"/>
-  <installed_file file_name="targets/M480/Documents/devices.htm" crc32="0xc4bf126e"/>
-  <installed_file file_name="targets/M480/Documents/doc_home.htm" crc32="0x5538277a"/>
-  <installed_file file_name="targets/M480/Documents/index.htm" crc32="0xa95d9f2a"/>
-  <installed_file file_name="targets/M480/Documents/project_properties.htm" crc32="0x9d3fc177"/>
-  <installed_file file_name="targets/M480/Documents/project_templates.htm" crc32="0xc0e01197"/>
-  <installed_file file_name="targets/M480/Documents/rwt/doc_search.htm" crc32="0xdb0ac311"/>
-  <installed_file file_name="targets/M480/Documents/rwt/images/chevron.png" crc32="0x5022cf74"/>
-  <installed_file file_name="targets/M480/Documents/rwt/images/doc_leaf.png" crc32="0xbb564717"/>
-  <installed_file file_name="targets/M480/Documents/rwt/images/doc_nav_buttons.gif" crc32="0xaf0111ae"/>
-  <installed_file file_name="targets/M480/Documents/rwt/images/fold_closed.png" crc32="0xe3c70788"/>
-  <installed_file file_name="targets/M480/Documents/rwt/images/fold_empty.png" crc32="0x33f3354f"/>
-  <installed_file file_name="targets/M480/Documents/rwt/images/fold_open.png" crc32="0x56a3e150"/>
-  <installed_file file_name="targets/M480/Documents/rwt/images/rwt-header-background.png" crc32="0x3e51dd99"/>
-  <installed_file file_name="targets/M480/Documents/rwt/images/tablesorter.asc.gif" crc32="0xcb153084"/>
-  <installed_file file_name="targets/M480/Documents/rwt/images/tablesorter.bg.gif" crc32="0xb88a154f"/>
-  <installed_file file_name="targets/M480/Documents/rwt/images/tablesorter.desc.gif" crc32="0x38da27ab"/>
-  <installed_file file_name="targets/M480/Documents/rwt/scripts/doc_search.js" crc32="0x5e5adf22"/>
-  <installed_file file_name="targets/M480/Documents/rwt/scripts/doc_search_index.js" crc32="0x78106f4b"/>
-  <installed_file file_name="targets/M480/Documents/rwt/scripts/doc_search_index_a.js" crc32="0xee011d1c"/>
-  <installed_file file_name="targets/M480/Documents/rwt/scripts/doc_search_index_b.js" crc32="0xf8fbe005"/>
-  <installed_file file_name="targets/M480/Documents/rwt/scripts/doc_search_index_c.js" crc32="0xed128fb4"/>
-  <installed_file file_name="targets/M480/Documents/rwt/scripts/doc_search_index_d.js" crc32="0x29a0d72a"/>
-  <installed_file file_name="targets/M480/Documents/rwt/scripts/doc_search_index_e.js" crc32="0x694512ef"/>
-  <installed_file file_name="targets/M480/Documents/rwt/scripts/doc_search_index_f.js" crc32="0xe62de8e2"/>
-  <installed_file file_name="targets/M480/Documents/rwt/scripts/doc_search_index_g.js" crc32="0xbf0f7941"/>
-  <installed_file file_name="targets/M480/Documents/rwt/scripts/doc_search_index_h.js" crc32="0x867deb43"/>
-  <installed_file file_name="targets/M480/Documents/rwt/scripts/doc_search_index_i.js" crc32="0xbc69fc10"/>
-  <installed_file file_name="targets/M480/Documents/rwt/scripts/doc_search_index_j.js" crc32="0xba300fb9"/>
-  <installed_file file_name="targets/M480/Documents/rwt/scripts/doc_search_index_k.js" crc32="0xa11802c1"/>
-  <installed_file file_name="targets/M480/Documents/rwt/scripts/doc_search_index_l.js" crc32="0x42742505"/>
-  <installed_file file_name="targets/M480/Documents/rwt/scripts/doc_search_index_m.js" crc32="0x64e49147"/>
-  <installed_file file_name="targets/M480/Documents/rwt/scripts/doc_search_index_n.js" crc32="0x1d74206c"/>
-  <installed_file file_name="targets/M480/Documents/rwt/scripts/doc_search_index_o.js" crc32="0xe3c9c04d"/>
-  <installed_file file_name="targets/M480/Documents/rwt/scripts/doc_search_index_p.js" crc32="0xb8736c6b"/>
-  <installed_file file_name="targets/M480/Documents/rwt/scripts/doc_search_index_q.js" crc32="0xf849b9c6"/>
-  <installed_file file_name="targets/M480/Documents/rwt/scripts/doc_search_index_r.js" crc32="0x79c18714"/>
-  <installed_file file_name="targets/M480/Documents/rwt/scripts/doc_search_index_s.js" crc32="0x41ca16ba"/>
-  <installed_file file_name="targets/M480/Documents/rwt/scripts/doc_search_index_t.js" crc32="0x4167666a"/>
-  <installed_file file_name="targets/M480/Documents/rwt/scripts/doc_search_index_u.js" crc32="0x3e14a4d5"/>
-  <installed_file file_name="targets/M480/Documents/rwt/scripts/doc_search_index_v.js" crc32="0x660be2f7"/>
-  <installed_file file_name="targets/M480/Documents/rwt/scripts/doc_search_index_w.js" crc32="0x12d903dc"/>
-  <installed_file file_name="targets/M480/Documents/rwt/scripts/doc_search_index_x.js" crc32="0x144374db"/>
-  <installed_file file_name="targets/M480/Documents/rwt/scripts/doc_search_index_y.js" crc32="0x4d435d9f"/>
-  <installed_file file_name="targets/M480/Documents/rwt/scripts/doc_search_index_z.js" crc32="0xc71c58e"/>
-  <installed_file file_name="targets/M480/Documents/rwt/scripts/doc_search_pages.js" crc32="0x9bfa31d3"/>
-  <installed_file file_name="targets/M480/Documents/rwt/scripts/fold.js" crc32="0xe41ff1eb"/>
-  <installed_file file_name="targets/M480/Documents/rwt/scripts/foldLinkNav.js" crc32="0xfd4520d8"/>
-  <installed_file file_name="targets/M480/Documents/rwt/scripts/jquery-latest.js" crc32="0x9aa16624"/>
-  <installed_file file_name="targets/M480/Documents/rwt/scripts/jquery-ui-latest.js" crc32="0x2196fc7"/>
-  <installed_file file_name="targets/M480/Documents/rwt/scripts/jquery.layout-latest.js" crc32="0x45cfe67d"/>
-  <installed_file file_name="targets/M480/Documents/rwt/scripts/rwt-doc-page.js" crc32="0x4c6615a2"/>
-  <installed_file file_name="targets/M480/Documents/rwt/scripts/rwt-doc.js" crc32="0xbb6d6f5c"/>
-  <installed_file file_name="targets/M480/Documents/rwt/scripts/rwt.js" crc32="0x5722fa8b"/>
-  <installed_file file_name="targets/M480/Documents/rwt/styles/default.css" crc32="0x3c71642a"/>
-  <installed_file file_name="targets/M480/Documents/rwt/styles/fold.css" crc32="0x8b6e3fc3"/>
-  <installed_file file_name="targets/M480/Documents/rwt/styles/foldLinkNav.css" crc32="0x96b03adb"/>
-  <installed_file file_name="targets/M480/Documents/rwt/styles/rwt-doc-page.css" crc32="0xbec69f45"/>
-  <installed_file file_name="targets/M480/Documents/rwt/styles/rwt-doc.css" crc32="0xe47aca52"/>
-  <installed_file file_name="targets/M480/Documents/rwt/styles/rwt-main-frame.css" crc32="0x89b3b4ab"/>
-  <installed_file file_name="targets/M480/Documents/rwt/styles/rwt-tree.css" crc32="0xbdf56e62"/>
-  <installed_file file_name="targets/M480/Documents/rwt/styles/rwt-ui-layout.css" crc32="0xa55d19ee"/>
-  <installed_file file_name="targets/M480/Documents/rwt/styles/rwt.css" crc32="0xead70eb"/>
-  <installed_file file_name="targets/M480/Documents/rwt/styles/theme.css" crc32="0x0"/>
-  <installed_file file_name="targets/M480/Documents/sample_solutions.htm" crc32="0x6d19bbfc"/>
-  <installed_file file_name="targets/M480/Loader/Loader.hzp" crc32="0x495fb557"/>
-  <installed_file file_name="targets/M480/Loader/M481_AP_128_Loader.elf" crc32="0xffda2a50"/>
-  <installed_file file_name="targets/M480/Loader/M481_AP_128_flm.s" crc32="0x388d5b4e"/>
-  <installed_file file_name="targets/M480/Loader/M481_AP_256_Loader.elf" crc32="0x7bc8338a"/>
-  <installed_file file_name="targets/M480/Loader/M481_AP_256_flm.s" crc32="0x388d5b4e"/>
-  <installed_file file_name="targets/M480/Loader/M481_AP_512_Loader.elf" crc32="0x8199619d"/>
-  <installed_file file_name="targets/M480/Loader/M481_AP_512_flm.s" crc32="0x388d5b4e"/>
-  <installed_file file_name="targets/M480/Loader/M481_LD_4_Loader.elf" crc32="0x3c0e700c"/>
-  <installed_file file_name="targets/M480/Loader/M481_LD_4_flm.s" crc32="0xdbc44d56"/>
-  <installed_file file_name="targets/M480/Loader/libmem_m480.h" crc32="0xa12701c9"/>
-  <installed_file file_name="targets/M480/Loader/libmem_m480_internal_flash_driver.c" crc32="0x48fe010d"/>
-  <installed_file file_name="targets/M480/Loader/loader.c" crc32="0x86726a74"/>
-  <installed_file file_name="targets/M480/Loader/ram_placement.xml" crc32="0x5d8a2c0e"/>
-  <installed_file file_name="targets/M480/Samples/M480_CMSIS_DSP_Samples.hzp" crc32="0xd91d3dd4"/>
-  <installed_file file_name="targets/M480/Samples/M480_Samples.hzp" crc32="0x7f9c4028"/>
-  <installed_file file_name="targets/M480/Samples/hello.cpp" crc32="0x6e0cf43"/>
-  <installed_file file_name="targets/M480/Samples/systick.cpp" crc32="0x26c7bcda"/>
-  <installed_file file_name="targets/M480/Scripts/M480_Target.js" crc32="0x2283f2f4"/>
-  <installed_file file_name="targets/M480/Source/M480_Startup.s" crc32="0x2c51c9b4"/>
-  <installed_file file_name="targets/M480/Source/M481_v1_Vectors.s" crc32="0xcc90a724"/>
-  <installed_file file_name="targets/M480/Source/ctl_m480.c" crc32="0xe11881e7"/>
-  <installed_file file_name="targets/M480/Source/main.cpp" crc32="0x9c045afc"/>
-  <installed_file file_name="targets/M480/Source/start.s" crc32="0x3848a82d"/>
-  <installed_file file_name="targets/M480/XML/M481LE8AE_MemoryMap.xml" crc32="0x19aa428f"/>
-  <installed_file file_name="targets/M480/XML/M481LG8AE_MemoryMap.xml" crc32="0xd1d9a514"/>
-  <installed_file file_name="targets/M480/XML/M481LGAAE_MemoryMap.xml" crc32="0x5225f1e"/>
-  <installed_file file_name="targets/M480/XML/M481LGCAE_MemoryMap.xml" crc32="0x3502173e"/>
-  <installed_file file_name="targets/M480/XML/M481LIDAE_MemoryMap.xml" crc32="0x6dffdb9e"/>
-  <installed_file file_name="targets/M480/XML/M481SE8AE_MemoryMap.xml" crc32="0x53e00af6"/>
-  <installed_file file_name="targets/M480/XML/M481SG8AE2A_MemoryMap.xml" crc32="0x91309a08"/>
-  <installed_file file_name="targets/M480/XML/M481SG8AE_MemoryMap.xml" crc32="0x9b93ed6d"/>
-  <installed_file file_name="targets/M480/XML/M481SGAAE_MemoryMap.xml" crc32="0x4f681767"/>
-  <installed_file file_name="targets/M480/XML/M481SGCAE2A_MemoryMap.xml" crc32="0xd5d5e146"/>
-  <installed_file file_name="targets/M480/XML/M481SGCAE_MemoryMap.xml" crc32="0x7f485f47"/>
-  <installed_file file_name="targets/M480/XML/M481SIDAE_MemoryMap.xml" crc32="0x27b593e7"/>
-  <installed_file file_name="targets/M480/XML/M481ZE8AE_MemoryMap.xml" crc32="0xc4e1e869"/>
-  <installed_file file_name="targets/M480/XML/M481ZG8AE_MemoryMap.xml" crc32="0xc920ff2"/>
-  <installed_file file_name="targets/M480/XML/M481ZGAAE_MemoryMap.xml" crc32="0xd869f5f8"/>
-  <installed_file file_name="targets/M480/XML/M481ZGCAE_MemoryMap.xml" crc32="0xe849bdd8"/>
-  <installed_file file_name="targets/M480/XML/M481ZGDAE_MemoryMap.xml" crc32="0xa1fe1dbc"/>
-  <installed_file file_name="targets/M480/XML/M481ZIDAE_MemoryMap.xml" crc32="0xb0b47178"/>
-  <installed_file file_name="targets/M480/XML/M481_v1_Registers.xml" crc32="0x5301b61e"/>
-  <installed_file file_name="targets/M480/XML/M482KGAAE_MemoryMap.xml" crc32="0x7f3890ee"/>
-  <installed_file file_name="targets/M480/XML/M482KGCAE_MemoryMap.xml" crc32="0x4f18d8ce"/>
-  <installed_file file_name="targets/M480/XML/M482KIDAE_MemoryMap.xml" crc32="0x17e5146e"/>
-  <installed_file file_name="targets/M480/XML/M482LE8AE_MemoryMap.xml" crc32="0x114fd30a"/>
-  <installed_file file_name="targets/M480/XML/M482LG8AE_MemoryMap.xml" crc32="0xd93c3491"/>
-  <installed_file file_name="targets/M480/XML/M482LGAAE_MemoryMap.xml" crc32="0xdc7ce9b"/>
-  <installed_file file_name="targets/M480/XML/M482LGCAE_MemoryMap.xml" crc32="0x3de786bb"/>
-  <installed_file file_name="targets/M480/XML/M482LIDAE_MemoryMap.xml" crc32="0x651a4a1b"/>
-  <installed_file file_name="targets/M480/XML/M482SE8AE_MemoryMap.xml" crc32="0x5b059b73"/>
-  <installed_file file_name="targets/M480/XML/M482SG8AE_MemoryMap.xml" crc32="0x93767ce8"/>
-  <installed_file file_name="targets/M480/XML/M482SGAAE_MemoryMap.xml" crc32="0x478d86e2"/>
-  <installed_file file_name="targets/M480/XML/M482SGCAE_MemoryMap.xml" crc32="0x77adcec2"/>
-  <installed_file file_name="targets/M480/XML/M482SIDAE_MemoryMap.xml" crc32="0x2f500262"/>
-  <installed_file file_name="targets/M480/XML/M482ZE8AE_MemoryMap.xml" crc32="0xcc0479ec"/>
-  <installed_file file_name="targets/M480/XML/M482ZG8AE_MemoryMap.xml" crc32="0x4779e77"/>
-  <installed_file file_name="targets/M480/XML/M482ZGCAE_MemoryMap.xml" crc32="0xe0ac2c5d"/>
-  <installed_file file_name="targets/M480/XML/M482ZIDAE_MemoryMap.xml" crc32="0xb851e0fd"/>
-  <installed_file file_name="targets/M480/XML/M483KG8AE2A_MemoryMap.xml" crc32="0xe5fc9297"/>
-  <installed_file file_name="targets/M480/XML/M483KGCAE2A_MemoryMap.xml" crc32="0xa119e9d9"/>
-  <installed_file file_name="targets/M480/XML/M483KGCAE_MemoryMap.xml" crc32="0x5349b125"/>
-  <installed_file file_name="targets/M480/XML/M483KIDAE_MemoryMap.xml" crc32="0x104664ed"/>
-  <installed_file file_name="targets/M480/XML/M483SE8AE_MemoryMap.xml" crc32="0x5ca6ebf0"/>
-  <installed_file file_name="targets/M480/XML/M483SG8AE2A_MemoryMap.xml" crc32="0xe3b19ae5"/>
-  <installed_file file_name="targets/M480/XML/M483SG8AE_MemoryMap.xml" crc32="0x94d50c6b"/>
-  <installed_file file_name="targets/M480/XML/M483SGAAE_MemoryMap.xml" crc32="0x402ef661"/>
-  <installed_file file_name="targets/M480/XML/M483SGCAE2A_MemoryMap.xml" crc32="0xa754e1ab"/>
-  <installed_file file_name="targets/M480/XML/M483SGCAE_MemoryMap.xml" crc32="0x700ebe41"/>
-  <installed_file file_name="targets/M480/XML/M483SIDAE_MemoryMap.xml" crc32="0x28f372e1"/>
-  <installed_file file_name="targets/M480/XML/M484KIDAE_MemoryMap.xml" crc32="0x62e3764"/>
-  <installed_file file_name="targets/M480/XML/M484SGAAE2U_MemoryMap.xml" crc32="0x93e1c812"/>
-  <installed_file file_name="targets/M480/XML/M484SGAAE_MemoryMap.xml" crc32="0x5646a5e8"/>
-  <installed_file file_name="targets/M480/XML/M484SIDAE2U_MemoryMap.xml" crc32="0x1093209f"/>
-  <installed_file file_name="targets/M480/XML/M484SIDAE_MemoryMap.xml" crc32="0x3e9b2168"/>
-  <installed_file file_name="targets/M480/XML/M485KIDAE_MemoryMap.xml" crc32="0x18d47e7"/>
-  <installed_file file_name="targets/M480/XML/M485LIDAE_MemoryMap.xml" crc32="0x73721992"/>
-  <installed_file file_name="targets/M480/XML/M485SIDAE_MemoryMap.xml" crc32="0x393851eb"/>
-  <installed_file file_name="targets/M480/XML/M485ZIDAE_MemoryMap.xml" crc32="0xae39b374"/>
-  <installed_file file_name="targets/M480/XML/M487JIDAE_MemoryMap.xml" crc32="0x7219bd17"/>
-  <installed_file file_name="targets/M480/XML/M487KIDAE_MemoryMap.xml" crc32="0xecba6e1"/>
-  <installed_file file_name="targets/M480/XML/M487KMCAN_MemoryMap.xml" crc32="0xca9fa851"/>
-  <installed_file file_name="targets/M480/XML/M487SGAAE_MemoryMap.xml" crc32="0x5ea3346d"/>
-  <installed_file file_name="targets/M480/XML/M487SIDAE_MemoryMap.xml" crc32="0x367eb0ed"/>
-  <installed_file file_name="targets/M480/XML/project_templates.xml" crc32="0x61655f1"/>
-  <installed_file file_name="targets/M480/XML/property_groups.xml" crc32="0xf69d6f68"/>
+<package crossstudio_versions="8:4-" version="0.1" dependencies="CMSIS" filetype="hzq" cpu_family="M43x" web-publish-files="targets/M480/Documents/*" author="Yoon-Ki Hong" name="M43x" cpu_manufacturer="Nuvoton" build_version="2024061300.00000;crossworks_v4;crossworks_v4" date="2024-06-13T00:00:00">
+	<history>
+		<version name="0.1">
+			<description>Initial Release.</description>
+		</version>
+	</history>
+	<targets>
+		<category name="M43x">
+			<cpu name="M433SE8AE"/>
+		</category>
+	</targets>
+	<installed_file file_name="packages/M480_package.xml" crc32="0x0"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/Include/M480.h" crc32="0x69219ab4"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/Include/NuMicro.h" crc32="0x9f0dbd86"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/Include/acmp_reg.h" crc32="0x5c41920b"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/Include/bpwm_reg.h" crc32="0x5693e5ad"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/Include/can_reg.h" crc32="0x7403ee57"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/Include/ccap_reg.h" crc32="0x7985dc14"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/Include/clk_reg.h" crc32="0xfe4979a5"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/Include/crc_reg.h" crc32="0xe409b5ba"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/Include/crypto_reg.h" crc32="0xdfd20a3b"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/Include/dac_reg.h" crc32="0x736beb41"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/Include/eadc_reg.h" crc32="0x2bedc4a1"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/Include/ebi_reg.h" crc32="0xac6f7143"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/Include/ecap_reg.h" crc32="0xd7434911"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/Include/emac_reg.h" crc32="0x885585f6"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/Include/epwm_reg.h" crc32="0x25b67782"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/Include/fmc_reg.h" crc32="0x11439"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/Include/gpio_reg.h" crc32="0x1ad30d92"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/Include/hsotg_reg.h" crc32="0xfce6ab7d"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/Include/hsusbd_reg.h" crc32="0x38c9bcdd"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/Include/hsusbh_reg.h" crc32="0x177e2405"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/Include/i2c_reg.h" crc32="0xe9419614"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/Include/i2s_reg.h" crc32="0x98c05d67"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/Include/opa_reg.h" crc32="0xbdb15506"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/Include/otg_reg.h" crc32="0x298e0c01"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/Include/pdma_reg.h" crc32="0xa94cd367"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/Include/qei_reg.h" crc32="0x37f75c70"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/Include/qspi_reg.h" crc32="0x4077d362"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/Include/rtc_reg.h" crc32="0xcf0c8b19"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/Include/sc_reg.h" crc32="0x136471b9"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/Include/sdh_reg.h" crc32="0x6b6e6f88"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/Include/spi_reg.h" crc32="0x7d0566f4"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/Include/spim_reg.h" crc32="0x14cbc3b6"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/Include/sys_reg.h" crc32="0xa07aa55a"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/Include/system_M480.h" crc32="0x3b450497"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/Include/timer_reg.h" crc32="0xd772c346"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/Include/trng_reg.h" crc32="0x5fd2e5bb"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/Include/uart_reg.h" crc32="0x29edbcc9"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/Include/ui2c_reg.h" crc32="0x89d56c05"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/Include/usbd_reg.h" crc32="0x6d8be0b8"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/Include/usbh_reg.h" crc32="0x5ae56731"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/Include/uspi_reg.h" crc32="0xfc890eb8"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/Include/uuart_reg.h" crc32="0xdc69710a"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/Include/wdt_reg.h" crc32="0xb517b9c4"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/Include/wwdt_reg.h" crc32="0x84d44ade"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/Source/system_M480.c" crc32="0x63954548"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/acmp.h" crc32="0xaaa17e00"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/bpwm.h" crc32="0xd7c8645a"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/can.h" crc32="0x9a323a25"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/ccap.h" crc32="0xa3866d71"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/clk.h" crc32="0xa1548c41"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/crc.h" crc32="0xdcab8ae1"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/crypto.h" crc32="0x5c5576eb"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/dac.h" crc32="0xd84d7d9e"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/eadc.h" crc32="0x3f3299ac"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/ebi.h" crc32="0x4c5fa3de"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/ecap.h" crc32="0xe173e37d"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/emac.h" crc32="0xd8e6bfc5"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/epwm.h" crc32="0x2ce79ec1"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/fmc.h" crc32="0x584bf5c4"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/gpio.h" crc32="0x56ae0776"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/hsotg.h" crc32="0xc3f6a03"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/hsusbd.h" crc32="0x44b9d101"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/i2c.h" crc32="0xbd5e9d0e"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/i2s.h" crc32="0x3723fdfa"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/opa.h" crc32="0xc47e02dd"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/otg.h" crc32="0xb506068a"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/pdma.h" crc32="0x47eb5ee9"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/qei.h" crc32="0x30a405dd"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/qspi.h" crc32="0x719f1379"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/rtc.h" crc32="0x1e565d61"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/sc.h" crc32="0x863dd09b"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/scuart.h" crc32="0xe136b191"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/sdh.h" crc32="0x3b3bda26"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/spi.h" crc32="0x2bdd1dec"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/spim.h" crc32="0x61207078"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/sys.h" crc32="0xd5da07c8"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/timer.h" crc32="0x43c3e77d"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/timer_pwm.h" crc32="0x470ca270"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/trng.h" crc32="0x58a7b897"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/uart.h" crc32="0x1325880d"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/usbd.h" crc32="0x565f66eb"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/usci_i2c.h" crc32="0x3a8d99f"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/usci_spi.h" crc32="0x5055b5d2"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/usci_uart.h" crc32="0xeea93830"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/wdt.h" crc32="0x42d881d9"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/inc/wwdt.h" crc32="0x3b3f4ebe"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/src/acmp.c" crc32="0x80ccf60b"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/src/bpwm.c" crc32="0x26e035c5"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/src/can.c" crc32="0xda876d2d"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/src/ccap.c" crc32="0xd0f04abc"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/src/clk.c" crc32="0x5993d64f"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/src/crc.c" crc32="0x9c6f2612"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/src/crypto.c" crc32="0x67a9767d"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/src/dac.c" crc32="0x5bdbc503"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/src/eadc.c" crc32="0x21540143"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/src/ebi.c" crc32="0xd10ed1ab"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/src/ecap.c" crc32="0x467c86cf"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/src/emac.c" crc32="0xba13b43"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/src/epwm.c" crc32="0x9f9ca78b"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/src/fmc.c" crc32="0x72507a6b"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/src/gpio.c" crc32="0x8f673b5e"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/src/hsusbd.c" crc32="0x96edf58e"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/src/i2c.c" crc32="0x5670a758"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/src/i2s.c" crc32="0x29fb1d96"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/src/pdma.c" crc32="0x664fdb09"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/src/qei.c" crc32="0xdb2cc27e"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/src/qspi.c" crc32="0x3e8ae254"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/src/retarget.c" crc32="0x22ae2fc7"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/src/rtc.c" crc32="0x3b417de2"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/src/sc.c" crc32="0x5c6ec82d"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/src/scuart.c" crc32="0x64995866"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/src/sdh.c" crc32="0x46ce0fac"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/src/spi.c" crc32="0xcf259731"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/src/spim.c" crc32="0xb54d5374"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/src/sys.c" crc32="0xaf848657"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/src/timer.c" crc32="0x998900f3"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/src/timer_pwm.c" crc32="0x7c8bb32d"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/src/trng.c" crc32="0xb28c279e"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/src/uart.c" crc32="0x3035b84f"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/src/usbd.c" crc32="0x7d792f82"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/src/usci_i2c.c" crc32="0x43b8b45a"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/src/usci_spi.c" crc32="0x83fc22d3"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/src/usci_uart.c" crc32="0x5c035f18"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/src/wdt.c" crc32="0xa15a6050"/>
+	<installed_file file_name="targets/M480/CMSIS/Device/M480/StdDriver/src/wwdt.c" crc32="0x86b51625"/>
+	<installed_file file_name="targets/M480/CMSIS/Flash/M481_AP_128.FLM" crc32="0xd62bfc5"/>
+	<installed_file file_name="targets/M480/CMSIS/Flash/M481_AP_256.FLM" crc32="0x6f7eb33e"/>
+	<installed_file file_name="targets/M480/CMSIS/Flash/M481_AP_512.FLM" crc32="0x2f5d6e04"/>
+	<installed_file file_name="targets/M480/CMSIS/Flash/M481_LD_4.FLM" crc32="0xf16fd976"/>
+	<installed_file file_name="targets/M480/Documents/M480_CPU_Support_Package_Guide.pdf" crc32="0x7961ae4e"/>
+	<installed_file file_name="targets/M480/Documents/M480_devices.htm" crc32="0x5608b15b"/>
+	<installed_file file_name="targets/M480/Documents/M481LE8AE_device.htm" crc32="0xc5867215"/>
+	<installed_file file_name="targets/M480/Documents/M481LG8AE_device.htm" crc32="0x8d479bf0"/>
+	<installed_file file_name="targets/M480/Documents/M481LGAAE_device.htm" crc32="0x3c089a40"/>
+	<installed_file file_name="targets/M480/Documents/M481LGCAE_device.htm" crc32="0x1188f341"/>
+	<installed_file file_name="targets/M480/Documents/M481LIDAE_device.htm" crc32="0xfc9574b"/>
+	<installed_file file_name="targets/M480/Documents/M481SE8AE_device.htm" crc32="0xf6cb00c8"/>
+	<installed_file file_name="targets/M480/Documents/M481SG8AE2A_device.htm" crc32="0xef604604"/>
+	<installed_file file_name="targets/M480/Documents/M481SG8AE_device.htm" crc32="0xbe0ae92d"/>
+	<installed_file file_name="targets/M480/Documents/M481SGAAE_device.htm" crc32="0xf45e89d"/>
+	<installed_file file_name="targets/M480/Documents/M481SGCAE2A_device.htm" crc32="0x93358c3f"/>
+	<installed_file file_name="targets/M480/Documents/M481SGCAE_device.htm" crc32="0x22c5819c"/>
+	<installed_file file_name="targets/M480/Documents/M481SIDAE_device.htm" crc32="0x3c842596"/>
+	<installed_file file_name="targets/M480/Documents/M481ZE8AE_device.htm" crc32="0xe1ab5b77"/>
+	<installed_file file_name="targets/M480/Documents/M481ZG8AE_device.htm" crc32="0xa96ab292"/>
+	<installed_file file_name="targets/M480/Documents/M481ZGAAE_device.htm" crc32="0x1825b322"/>
+	<installed_file file_name="targets/M480/Documents/M481ZGCAE_device.htm" crc32="0x35a5da23"/>
+	<installed_file file_name="targets/M480/Documents/M481ZGDAE_device.htm" crc32="0x5c6e156b"/>
+	<installed_file file_name="targets/M480/Documents/M481ZIDAE_device.htm" crc32="0x2be47e29"/>
+	<installed_file file_name="targets/M480/Documents/M482KGAAE_device.htm" crc32="0xe2c775d0"/>
+	<installed_file file_name="targets/M480/Documents/M482KGCAE_device.htm" crc32="0xcf471cd1"/>
+	<installed_file file_name="targets/M480/Documents/M482KIDAE_device.htm" crc32="0xd106b8db"/>
+	<installed_file file_name="targets/M480/Documents/M482LE8AE_device.htm" crc32="0x1669ab10"/>
+	<installed_file file_name="targets/M480/Documents/M482LG8AE_device.htm" crc32="0x5ea842f5"/>
+	<installed_file file_name="targets/M480/Documents/M482LGAAE_device.htm" crc32="0xefe74345"/>
+	<installed_file file_name="targets/M480/Documents/M482LGCAE_device.htm" crc32="0xc2672a44"/>
+	<installed_file file_name="targets/M480/Documents/M482LIDAE_device.htm" crc32="0xdc268e4e"/>
+	<installed_file file_name="targets/M480/Documents/M482SE8AE_device.htm" crc32="0x2524d9cd"/>
+	<installed_file file_name="targets/M480/Documents/M482SG8AE_device.htm" crc32="0x6de53028"/>
+	<installed_file file_name="targets/M480/Documents/M482SGAAE_device.htm" crc32="0xdcaa3198"/>
+	<installed_file file_name="targets/M480/Documents/M482SGCAE_device.htm" crc32="0xf12a5899"/>
+	<installed_file file_name="targets/M480/Documents/M482SIDAE_device.htm" crc32="0xef6bfc93"/>
+	<installed_file file_name="targets/M480/Documents/M482ZE8AE_device.htm" crc32="0x32448272"/>
+	<installed_file file_name="targets/M480/Documents/M482ZG8AE_device.htm" crc32="0x7a856b97"/>
+	<installed_file file_name="targets/M480/Documents/M482ZGCAE_device.htm" crc32="0xe64a0326"/>
+	<installed_file file_name="targets/M480/Documents/M482ZIDAE_device.htm" crc32="0xf80ba72c"/>
+	<installed_file file_name="targets/M480/Documents/M483KG8AE2A_device.htm" crc32="0x1ca5ec3d"/>
+	<installed_file file_name="targets/M480/Documents/M483KGCAE2A_device.htm" crc32="0xed5f74c5"/>
+	<installed_file file_name="targets/M480/Documents/M483KGCAE_device.htm" crc32="0x9f387963"/>
+	<installed_file file_name="targets/M480/Documents/M483KIDAE_device.htm" crc32="0x63e304b5"/>
+	<installed_file file_name="targets/M480/Documents/M483SE8AE_device.htm" crc32="0x97c165a3"/>
+	<installed_file file_name="targets/M480/Documents/M483SG8AE2A_device.htm" crc32="0xba60667"/>
+	<installed_file file_name="targets/M480/Documents/M483SG8AE_device.htm" crc32="0xdf008c46"/>
+	<installed_file file_name="targets/M480/Documents/M483SGAAE_device.htm" crc32="0x6e4f8df6"/>
+	<installed_file file_name="targets/M480/Documents/M483SGCAE2A_device.htm" crc32="0x77f3cc5c"/>
+	<installed_file file_name="targets/M480/Documents/M483SGCAE_device.htm" crc32="0x43cfe4f7"/>
+	<installed_file file_name="targets/M480/Documents/M483SIDAE_device.htm" crc32="0x5d8e40fd"/>
+	<installed_file file_name="targets/M480/Documents/M484KIDAE_device.htm" crc32="0x72181766"/>
+	<installed_file file_name="targets/M480/Documents/M484SGAAE2U_device.htm" crc32="0xa98ad0c"/>
+	<installed_file file_name="targets/M480/Documents/M484SGAAE_device.htm" crc32="0x7fb49e25"/>
+	<installed_file file_name="targets/M480/Documents/M484SIDAE2U_device.htm" crc32="0x12e2c523"/>
+	<installed_file file_name="targets/M480/Documents/M484SIDAE_device.htm" crc32="0x4c75532e"/>
+	<installed_file file_name="targets/M480/Documents/M485KIDAE_device.htm" crc32="0xc0fdab08"/>
+	<installed_file file_name="targets/M480/Documents/M485LIDAE_device.htm" crc32="0xcddd9d9d"/>
+	<installed_file file_name="targets/M480/Documents/M485SIDAE_device.htm" crc32="0xfe90ef40"/>
+	<installed_file file_name="targets/M480/Documents/M485ZIDAE_device.htm" crc32="0xe9f0b4ff"/>
+	<installed_file file_name="targets/M480/Documents/M487JIDAE_device.htm" crc32="0xa34ca9e4"/>
+	<installed_file file_name="targets/M480/Documents/M487KIDAE_device.htm" crc32="0xa1f7ce63"/>
+	<installed_file file_name="targets/M480/Documents/M487KMCAN_device.htm" crc32="0x89516c40"/>
+	<installed_file file_name="targets/M480/Documents/M487SGAAE_device.htm" crc32="0xac5b4720"/>
+	<installed_file file_name="targets/M480/Documents/M487SIDAE_device.htm" crc32="0x9f9a8a2b"/>
+	<installed_file file_name="targets/M480/Documents/contents.xml" crc32="0x29a7d9f5"/>
+	<installed_file file_name="targets/M480/Documents/creating_projects.htm" crc32="0xe3a7eefc"/>
+	<installed_file file_name="targets/M480/Documents/devices.htm" crc32="0xc4bf126e"/>
+	<installed_file file_name="targets/M480/Documents/doc_home.htm" crc32="0x5538277a"/>
+	<installed_file file_name="targets/M480/Documents/index.htm" crc32="0xa95d9f2a"/>
+	<installed_file file_name="targets/M480/Documents/project_properties.htm" crc32="0x9d3fc177"/>
+	<installed_file file_name="targets/M480/Documents/project_templates.htm" crc32="0xc0e01197"/>
+	<installed_file file_name="targets/M480/Documents/rwt/doc_search.htm" crc32="0xdb0ac311"/>
+	<installed_file file_name="targets/M480/Documents/rwt/images/chevron.png" crc32="0x5022cf74"/>
+	<installed_file file_name="targets/M480/Documents/rwt/images/doc_leaf.png" crc32="0xbb564717"/>
+	<installed_file file_name="targets/M480/Documents/rwt/images/doc_nav_buttons.gif" crc32="0xaf0111ae"/>
+	<installed_file file_name="targets/M480/Documents/rwt/images/fold_closed.png" crc32="0xe3c70788"/>
+	<installed_file file_name="targets/M480/Documents/rwt/images/fold_empty.png" crc32="0x33f3354f"/>
+	<installed_file file_name="targets/M480/Documents/rwt/images/fold_open.png" crc32="0x56a3e150"/>
+	<installed_file file_name="targets/M480/Documents/rwt/images/rwt-header-background.png" crc32="0x3e51dd99"/>
+	<installed_file file_name="targets/M480/Documents/rwt/images/tablesorter.asc.gif" crc32="0xcb153084"/>
+	<installed_file file_name="targets/M480/Documents/rwt/images/tablesorter.bg.gif" crc32="0xb88a154f"/>
+	<installed_file file_name="targets/M480/Documents/rwt/images/tablesorter.desc.gif" crc32="0x38da27ab"/>
+	<installed_file file_name="targets/M480/Documents/rwt/scripts/doc_search.js" crc32="0x5e5adf22"/>
+	<installed_file file_name="targets/M480/Documents/rwt/scripts/doc_search_index.js" crc32="0x78106f4b"/>
+	<installed_file file_name="targets/M480/Documents/rwt/scripts/doc_search_index_a.js" crc32="0xee011d1c"/>
+	<installed_file file_name="targets/M480/Documents/rwt/scripts/doc_search_index_b.js" crc32="0xf8fbe005"/>
+	<installed_file file_name="targets/M480/Documents/rwt/scripts/doc_search_index_c.js" crc32="0xed128fb4"/>
+	<installed_file file_name="targets/M480/Documents/rwt/scripts/doc_search_index_d.js" crc32="0x29a0d72a"/>
+	<installed_file file_name="targets/M480/Documents/rwt/scripts/doc_search_index_e.js" crc32="0x694512ef"/>
+	<installed_file file_name="targets/M480/Documents/rwt/scripts/doc_search_index_f.js" crc32="0xe62de8e2"/>
+	<installed_file file_name="targets/M480/Documents/rwt/scripts/doc_search_index_g.js" crc32="0xbf0f7941"/>
+	<installed_file file_name="targets/M480/Documents/rwt/scripts/doc_search_index_h.js" crc32="0x867deb43"/>
+	<installed_file file_name="targets/M480/Documents/rwt/scripts/doc_search_index_i.js" crc32="0xbc69fc10"/>
+	<installed_file file_name="targets/M480/Documents/rwt/scripts/doc_search_index_j.js" crc32="0xba300fb9"/>
+	<installed_file file_name="targets/M480/Documents/rwt/scripts/doc_search_index_k.js" crc32="0xa11802c1"/>
+	<installed_file file_name="targets/M480/Documents/rwt/scripts/doc_search_index_l.js" crc32="0x42742505"/>
+	<installed_file file_name="targets/M480/Documents/rwt/scripts/doc_search_index_m.js" crc32="0x64e49147"/>
+	<installed_file file_name="targets/M480/Documents/rwt/scripts/doc_search_index_n.js" crc32="0x1d74206c"/>
+	<installed_file file_name="targets/M480/Documents/rwt/scripts/doc_search_index_o.js" crc32="0xe3c9c04d"/>
+	<installed_file file_name="targets/M480/Documents/rwt/scripts/doc_search_index_p.js" crc32="0xb8736c6b"/>
+	<installed_file file_name="targets/M480/Documents/rwt/scripts/doc_search_index_q.js" crc32="0xf849b9c6"/>
+	<installed_file file_name="targets/M480/Documents/rwt/scripts/doc_search_index_r.js" crc32="0x79c18714"/>
+	<installed_file file_name="targets/M480/Documents/rwt/scripts/doc_search_index_s.js" crc32="0x41ca16ba"/>
+	<installed_file file_name="targets/M480/Documents/rwt/scripts/doc_search_index_t.js" crc32="0x4167666a"/>
+	<installed_file file_name="targets/M480/Documents/rwt/scripts/doc_search_index_u.js" crc32="0x3e14a4d5"/>
+	<installed_file file_name="targets/M480/Documents/rwt/scripts/doc_search_index_v.js" crc32="0x660be2f7"/>
+	<installed_file file_name="targets/M480/Documents/rwt/scripts/doc_search_index_w.js" crc32="0x12d903dc"/>
+	<installed_file file_name="targets/M480/Documents/rwt/scripts/doc_search_index_x.js" crc32="0x144374db"/>
+	<installed_file file_name="targets/M480/Documents/rwt/scripts/doc_search_index_y.js" crc32="0x4d435d9f"/>
+	<installed_file file_name="targets/M480/Documents/rwt/scripts/doc_search_index_z.js" crc32="0xc71c58e"/>
+	<installed_file file_name="targets/M480/Documents/rwt/scripts/doc_search_pages.js" crc32="0x9bfa31d3"/>
+	<installed_file file_name="targets/M480/Documents/rwt/scripts/fold.js" crc32="0xe41ff1eb"/>
+	<installed_file file_name="targets/M480/Documents/rwt/scripts/foldLinkNav.js" crc32="0xfd4520d8"/>
+	<installed_file file_name="targets/M480/Documents/rwt/scripts/jquery-latest.js" crc32="0x9aa16624"/>
+	<installed_file file_name="targets/M480/Documents/rwt/scripts/jquery-ui-latest.js" crc32="0x2196fc7"/>
+	<installed_file file_name="targets/M480/Documents/rwt/scripts/jquery.layout-latest.js" crc32="0x45cfe67d"/>
+	<installed_file file_name="targets/M480/Documents/rwt/scripts/rwt-doc-page.js" crc32="0x4c6615a2"/>
+	<installed_file file_name="targets/M480/Documents/rwt/scripts/rwt-doc.js" crc32="0xbb6d6f5c"/>
+	<installed_file file_name="targets/M480/Documents/rwt/scripts/rwt.js" crc32="0x5722fa8b"/>
+	<installed_file file_name="targets/M480/Documents/rwt/styles/default.css" crc32="0x3c71642a"/>
+	<installed_file file_name="targets/M480/Documents/rwt/styles/fold.css" crc32="0x8b6e3fc3"/>
+	<installed_file file_name="targets/M480/Documents/rwt/styles/foldLinkNav.css" crc32="0x96b03adb"/>
+	<installed_file file_name="targets/M480/Documents/rwt/styles/rwt-doc-page.css" crc32="0xbec69f45"/>
+	<installed_file file_name="targets/M480/Documents/rwt/styles/rwt-doc.css" crc32="0xe47aca52"/>
+	<installed_file file_name="targets/M480/Documents/rwt/styles/rwt-main-frame.css" crc32="0x89b3b4ab"/>
+	<installed_file file_name="targets/M480/Documents/rwt/styles/rwt-tree.css" crc32="0xbdf56e62"/>
+	<installed_file file_name="targets/M480/Documents/rwt/styles/rwt-ui-layout.css" crc32="0xa55d19ee"/>
+	<installed_file file_name="targets/M480/Documents/rwt/styles/rwt.css" crc32="0xead70eb"/>
+	<installed_file file_name="targets/M480/Documents/rwt/styles/theme.css" crc32="0x0"/>
+	<installed_file file_name="targets/M480/Documents/sample_solutions.htm" crc32="0x6d19bbfc"/>
+	<installed_file file_name="targets/M480/Loader/Loader.hzp" crc32="0x495fb557"/>
+	<installed_file file_name="targets/M480/Loader/M481_AP_128_Loader.elf" crc32="0xffda2a50"/>
+	<installed_file file_name="targets/M480/Loader/M481_AP_128_flm.s" crc32="0x388d5b4e"/>
+	<installed_file file_name="targets/M480/Loader/M481_AP_256_Loader.elf" crc32="0x7bc8338a"/>
+	<installed_file file_name="targets/M480/Loader/M481_AP_256_flm.s" crc32="0x388d5b4e"/>
+	<installed_file file_name="targets/M480/Loader/M481_AP_512_Loader.elf" crc32="0x8199619d"/>
+	<installed_file file_name="targets/M480/Loader/M481_AP_512_flm.s" crc32="0x388d5b4e"/>
+	<installed_file file_name="targets/M480/Loader/M481_LD_4_Loader.elf" crc32="0x3c0e700c"/>
+	<installed_file file_name="targets/M480/Loader/M481_LD_4_flm.s" crc32="0xdbc44d56"/>
+	<installed_file file_name="targets/M480/Loader/libmem_m480.h" crc32="0xa12701c9"/>
+	<installed_file file_name="targets/M480/Loader/libmem_m480_internal_flash_driver.c" crc32="0x48fe010d"/>
+	<installed_file file_name="targets/M480/Loader/loader.c" crc32="0x86726a74"/>
+	<installed_file file_name="targets/M480/Loader/ram_placement.xml" crc32="0x5d8a2c0e"/>
+	<installed_file file_name="targets/M480/Samples/M480_CMSIS_DSP_Samples.hzp" crc32="0xd91d3dd4"/>
+	<installed_file file_name="targets/M480/Samples/M480_Samples.hzp" crc32="0x7f9c4028"/>
+	<installed_file file_name="targets/M480/Samples/hello.cpp" crc32="0x6e0cf43"/>
+	<installed_file file_name="targets/M480/Samples/systick.cpp" crc32="0x26c7bcda"/>
+	<installed_file file_name="targets/M480/Scripts/M480_Target.js" crc32="0x2283f2f4"/>
+	<installed_file file_name="targets/M480/Source/M480_Startup.s" crc32="0x2c51c9b4"/>
+	<installed_file file_name="targets/M480/Source/M481_v1_Vectors.s" crc32="0xcc90a724"/>
+	<installed_file file_name="targets/M480/Source/ctl_m480.c" crc32="0xe11881e7"/>
+	<installed_file file_name="targets/M480/Source/main.cpp" crc32="0x9c045afc"/>
+	<installed_file file_name="targets/M480/Source/start.s" crc32="0x3848a82d"/>
+	<installed_file file_name="targets/M480/XML/M481LE8AE_MemoryMap.xml" crc32="0x19aa428f"/>
+	<installed_file file_name="targets/M480/XML/M481LG8AE_MemoryMap.xml" crc32="0xd1d9a514"/>
+	<installed_file file_name="targets/M480/XML/M481LGAAE_MemoryMap.xml" crc32="0x5225f1e"/>
+	<installed_file file_name="targets/M480/XML/M481LGCAE_MemoryMap.xml" crc32="0x3502173e"/>
+	<installed_file file_name="targets/M480/XML/M481LIDAE_MemoryMap.xml" crc32="0x6dffdb9e"/>
+	<installed_file file_name="targets/M480/XML/M481SE8AE_MemoryMap.xml" crc32="0x53e00af6"/>
+	<installed_file file_name="targets/M480/XML/M481SG8AE2A_MemoryMap.xml" crc32="0x91309a08"/>
+	<installed_file file_name="targets/M480/XML/M481SG8AE_MemoryMap.xml" crc32="0x9b93ed6d"/>
+	<installed_file file_name="targets/M480/XML/M481SGAAE_MemoryMap.xml" crc32="0x4f681767"/>
+	<installed_file file_name="targets/M480/XML/M481SGCAE2A_MemoryMap.xml" crc32="0xd5d5e146"/>
+	<installed_file file_name="targets/M480/XML/M481SGCAE_MemoryMap.xml" crc32="0x7f485f47"/>
+	<installed_file file_name="targets/M480/XML/M481SIDAE_MemoryMap.xml" crc32="0x27b593e7"/>
+	<installed_file file_name="targets/M480/XML/M481ZE8AE_MemoryMap.xml" crc32="0xc4e1e869"/>
+	<installed_file file_name="targets/M480/XML/M481ZG8AE_MemoryMap.xml" crc32="0xc920ff2"/>
+	<installed_file file_name="targets/M480/XML/M481ZGAAE_MemoryMap.xml" crc32="0xd869f5f8"/>
+	<installed_file file_name="targets/M480/XML/M481ZGCAE_MemoryMap.xml" crc32="0xe849bdd8"/>
+	<installed_file file_name="targets/M480/XML/M481ZGDAE_MemoryMap.xml" crc32="0xa1fe1dbc"/>
+	<installed_file file_name="targets/M480/XML/M481ZIDAE_MemoryMap.xml" crc32="0xb0b47178"/>
+	<installed_file file_name="targets/M480/XML/M481_v1_Registers.xml" crc32="0x5301b61e"/>
+	<installed_file file_name="targets/M480/XML/M482KGAAE_MemoryMap.xml" crc32="0x7f3890ee"/>
+	<installed_file file_name="targets/M480/XML/M482KGCAE_MemoryMap.xml" crc32="0x4f18d8ce"/>
+	<installed_file file_name="targets/M480/XML/M482KIDAE_MemoryMap.xml" crc32="0x17e5146e"/>
+	<installed_file file_name="targets/M480/XML/M482LE8AE_MemoryMap.xml" crc32="0x114fd30a"/>
+	<installed_file file_name="targets/M480/XML/M482LG8AE_MemoryMap.xml" crc32="0xd93c3491"/>
+	<installed_file file_name="targets/M480/XML/M482LGAAE_MemoryMap.xml" crc32="0xdc7ce9b"/>
+	<installed_file file_name="targets/M480/XML/M482LGCAE_MemoryMap.xml" crc32="0x3de786bb"/>
+	<installed_file file_name="targets/M480/XML/M482LIDAE_MemoryMap.xml" crc32="0x651a4a1b"/>
+	<installed_file file_name="targets/M480/XML/M482SE8AE_MemoryMap.xml" crc32="0x5b059b73"/>
+	<installed_file file_name="targets/M480/XML/M482SG8AE_MemoryMap.xml" crc32="0x93767ce8"/>
+	<installed_file file_name="targets/M480/XML/M482SGAAE_MemoryMap.xml" crc32="0x478d86e2"/>
+	<installed_file file_name="targets/M480/XML/M482SGCAE_MemoryMap.xml" crc32="0x77adcec2"/>
+	<installed_file file_name="targets/M480/XML/M482SIDAE_MemoryMap.xml" crc32="0x2f500262"/>
+	<installed_file file_name="targets/M480/XML/M482ZE8AE_MemoryMap.xml" crc32="0xcc0479ec"/>
+	<installed_file file_name="targets/M480/XML/M482ZG8AE_MemoryMap.xml" crc32="0x4779e77"/>
+	<installed_file file_name="targets/M480/XML/M482ZGCAE_MemoryMap.xml" crc32="0xe0ac2c5d"/>
+	<installed_file file_name="targets/M480/XML/M482ZIDAE_MemoryMap.xml" crc32="0xb851e0fd"/>
+	<installed_file file_name="targets/M480/XML/M483KG8AE2A_MemoryMap.xml" crc32="0xe5fc9297"/>
+	<installed_file file_name="targets/M480/XML/M483KGCAE2A_MemoryMap.xml" crc32="0xa119e9d9"/>
+	<installed_file file_name="targets/M480/XML/M483KGCAE_MemoryMap.xml" crc32="0x5349b125"/>
+	<installed_file file_name="targets/M480/XML/M483KIDAE_MemoryMap.xml" crc32="0x104664ed"/>
+	<installed_file file_name="targets/M480/XML/M483SE8AE_MemoryMap.xml" crc32="0x5ca6ebf0"/>
+	<installed_file file_name="targets/M480/XML/M483SG8AE2A_MemoryMap.xml" crc32="0xe3b19ae5"/>
+	<installed_file file_name="targets/M480/XML/M483SG8AE_MemoryMap.xml" crc32="0x94d50c6b"/>
+	<installed_file file_name="targets/M480/XML/M483SGAAE_MemoryMap.xml" crc32="0x402ef661"/>
+	<installed_file file_name="targets/M480/XML/M483SGCAE2A_MemoryMap.xml" crc32="0xa754e1ab"/>
+	<installed_file file_name="targets/M480/XML/M483SGCAE_MemoryMap.xml" crc32="0x700ebe41"/>
+	<installed_file file_name="targets/M480/XML/M483SIDAE_MemoryMap.xml" crc32="0x28f372e1"/>
+	<installed_file file_name="targets/M480/XML/M484KIDAE_MemoryMap.xml" crc32="0x62e3764"/>
+	<installed_file file_name="targets/M480/XML/M484SGAAE2U_MemoryMap.xml" crc32="0x93e1c812"/>
+	<installed_file file_name="targets/M480/XML/M484SGAAE_MemoryMap.xml" crc32="0x5646a5e8"/>
+	<installed_file file_name="targets/M480/XML/M484SIDAE2U_MemoryMap.xml" crc32="0x1093209f"/>
+	<installed_file file_name="targets/M480/XML/M484SIDAE_MemoryMap.xml" crc32="0x3e9b2168"/>
+	<installed_file file_name="targets/M480/XML/M485KIDAE_MemoryMap.xml" crc32="0x18d47e7"/>
+	<installed_file file_name="targets/M480/XML/M485LIDAE_MemoryMap.xml" crc32="0x73721992"/>
+	<installed_file file_name="targets/M480/XML/M485SIDAE_MemoryMap.xml" crc32="0x393851eb"/>
+	<installed_file file_name="targets/M480/XML/M485ZIDAE_MemoryMap.xml" crc32="0xae39b374"/>
+	<installed_file file_name="targets/M480/XML/M487JIDAE_MemoryMap.xml" crc32="0x7219bd17"/>
+	<installed_file file_name="targets/M480/XML/M487KIDAE_MemoryMap.xml" crc32="0xecba6e1"/>
+	<installed_file file_name="targets/M480/XML/M487KMCAN_MemoryMap.xml" crc32="0xca9fa851"/>
+	<installed_file file_name="targets/M480/XML/M487SGAAE_MemoryMap.xml" crc32="0x5ea3346d"/>
+	<installed_file file_name="targets/M480/XML/M487SIDAE_MemoryMap.xml" crc32="0x367eb0ed"/>
+	<installed_file file_name="targets/M480/XML/project_templates.xml" crc32="0x61655f1"/>
+	<installed_file file_name="targets/M480/XML/property_groups.xml" crc32="0xf69d6f68"/>
 </package>
