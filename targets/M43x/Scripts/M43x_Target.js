@@ -26,21 +26,9 @@ function Reset()
 function GetPartName()
 {
   var id = TargetInterface.peekWord(0x40000000);
-  var n = (id >> 8) & 0xFFF;
-  if (n == 0x481)
-    return "M481";
-  if (n == 0x482)
-    return "M482";
-  if (n == 0x483)
-    return "M483";
-  if (n == 0x484)
-    return "M484";
-  if (n == 0x484)
-    return "M484";
-  if (n == 0x485)
-    return "M485";
-  if (n == 0x487)
-    return "M487";
+  var n = id & 0xFFFFF;
+  if (n == 0x43312)
+    return "M433SE8AE";
   return "";
 }
 

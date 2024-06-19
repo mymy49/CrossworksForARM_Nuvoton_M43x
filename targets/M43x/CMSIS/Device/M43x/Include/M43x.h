@@ -200,7 +200,7 @@ IRQn_Type;
 
 
 #include "core_cm4.h"               /* Cortex-M4 processor and core peripherals           */
-#include "system_M480.h"            /* System include file                         */
+#include "system_M43x.h"            /* System include file                         */
 #include <stdint.h>
 
 

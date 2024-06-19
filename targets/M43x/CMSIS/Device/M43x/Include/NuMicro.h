@@ -9,7 +9,7 @@
 #ifndef __NUMICRO_H__
 #define __NUMICRO_H__
 
-#include "M480.h"
+#include "M43x.h"
 
 #endif  /* __NUMICRO_H__ */
 

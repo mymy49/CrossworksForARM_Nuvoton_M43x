@@ -1,7 +1,9 @@
 <!DOCTYPE CrossStudio_Session_File>
 <session>
  <Bookmarks/>
- <Breakpoints groups="Breakpoints" active_group="Breakpoints"/>
+ <Breakpoints groups="Breakpoints" active_group="Breakpoints">
+  <Exceptions set="Reset;MemManage;UsageFault_Coprocessor;UsageFault_CheckingError;UsageFault_StateError;BusFault;ExceptionEntryReturnFault;HardFault"/>
+ </Breakpoints>
  <ExecutionProfileWindow/>
  <FrameBuffer/>
  <Memory1/>
@@ -11,6 +13,18 @@
  <Project>
   <ProjectSessionItem path="Nuvoton_M43x"/>
   <ProjectSessionItem path="Nuvoton_M43x;Nuvoton_M43x"/>
+  <ProjectSessionItem path="Nuvoton_M43x;Nuvoton_M43x;packages"/>
+  <ProjectSessionItem path="Nuvoton_M43x;Nuvoton_M43x;targets"/>
+  <ProjectSessionItem path="Nuvoton_M43x;Nuvoton_M43x;targets;M43x"/>
+  <ProjectSessionItem path="Nuvoton_M43x;Nuvoton_M43x;targets;M43x;CMSIS"/>
+  <ProjectSessionItem path="Nuvoton_M43x;Nuvoton_M43x;targets;M43x;CMSIS;Device"/>
+  <ProjectSessionItem path="Nuvoton_M43x;Nuvoton_M43x;targets;M43x;CMSIS;Device;M43x"/>
+  <ProjectSessionItem path="Nuvoton_M43x;Nuvoton_M43x;targets;M43x;CMSIS;Device;M43x;Include"/>
+  <ProjectSessionItem path="Nuvoton_M43x;Nuvoton_M43x;targets;M43x;CMSIS;Device;M43x;StdDriver"/>
+  <ProjectSessionItem path="Nuvoton_M43x;Nuvoton_M43x;targets;M43x;CMSIS;Device;M43x;StdDriver;inc"/>
+  <ProjectSessionItem path="Nuvoton_M43x;Nuvoton_M43x;targets;M43x;CMSIS;Device;M43x;StdDriver;src"/>
+  <ProjectSessionItem path="Nuvoton_M43x;Nuvoton_M43x;targets;M43x;Scripts"/>
+  <ProjectSessionItem path="Nuvoton_M43x;Nuvoton_M43x;targets;M43x;XML"/>
  </Project>
  <Register1/>
  <Register2/>
@@ -35,6 +49,14 @@
  <Watch4>
   <Watches active="0" update="Never"/>
  </Watch4>
- <Files/>
+ <Files>
+  <SessionOpenFile windowGroup="DockEditLeft" x="10" y="7" useTextEdit="1" path="packages/M43x_package.xml" left="0" selected="1" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="21" y="1" useTextEdit="1" path="targets/M43x/XML/M433SE8AE_MemoryMap.xml" left="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="59" y="20" useTextEdit="1" path="targets/M43x/XML/property_groups.xml" left="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="45" y="53" useTextEdit="1" path="targets/M43x/XML/project_templates.xml" left="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="15" y="11" useTextEdit="1" path="targets/M43x/CMSIS/Device/M43x/Include/NuMicro.h" left="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="69" y="171" useTextEdit="1" path="targets/M43x/CMSIS/Device/M43x/Include/M43x.h" left="0" top="153" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="1" y="42" useTextEdit="1" path="targets/M43x/Scripts/M43x_Target.js" left="0" top="0" codecName="Default"/>
+ </Files>
  <ARMCrossStudioWindow activeProject="Nuvoton_M43x" fileDialogDefaultFilter="*.c" autoConnectTarget="" buildConfiguration="Common" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="" debugSearchPath="" autoConnectCapabilities="0"/>
 </session>
