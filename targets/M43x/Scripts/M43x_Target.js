@@ -29,6 +29,8 @@ function GetPartName()
   var n = id & 0xFFFFF;
   if (n == 0x43312)
     return "M433SE8AE";
+  else if (n == 0x43302)
+    return "M433LE8AE";
   return "";
 }
 
