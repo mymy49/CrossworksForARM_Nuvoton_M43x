@@ -15,7 +15,7 @@
       recurse="Yes" />
     <folder
       Name="targets"
-      exclude=""
+      exclude=";targets/M4xx/Source/M4xx_Startup.s"
       filter=""
       path="targets"
       recurse="Yes" />
