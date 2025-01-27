@@ -9,7 +9,7 @@
  *                                                                           *
  *****************************************************************************/
 
-#include "libmem_m480.h"
+#include "libmem_m4xx.h"
 #include <NuMicro.h>
 #include <libmem_flm_driver.h>
 

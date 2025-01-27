@@ -1,34 +1,69 @@
 <!DOCTYPE CrossStudio_Project_File>
 <solution Name="Loader" version="2" target="8">
-  <configuration Name="M481_AP_128 Release" inherited_configurations="M481_AP_128;Release" />
-  <configuration Name="M481_AP_128 Debug" inherited_configurations="M481_AP_128;Debug" />
-  <configuration Name="M481_AP_256 Release" inherited_configurations="M481_AP_256;Release" />
-  <configuration Name="M481_AP_256 Debug" inherited_configurations="M481_AP_256;Debug" />
-  <configuration Name="M481_AP_512 Release" inherited_configurations="M481_AP_512;Release" />
-  <configuration Name="M481_AP_512 Debug" inherited_configurations="M481_AP_512;Debug" />
-  <configuration Name="M481_LD_4 Release" inherited_configurations="M481_LD_4;Release" />
-  <configuration Name="M481_LD_4 Debug" inherited_configurations="M481_LD_4;Debug" />
-  <project Name="M480 Loader">
-    <configuration Name="Common" batch_build_configurations="M481_AP_128 Release;M481_AP_256 Release;M481_AP_512 Release;M481_LD_4 Release" arm_library_optimization="Small" arm_target_debug_interface_type="ADIv5" c_preprocessor_definitions="NO_SYSTEM_INIT;NO_VTOR_CONFIG" c_user_include_directories="$(PackagesDir)/libraries/libmem_drivers" arm_linker_treat_warnings_as_errors="No" debug_register_definition_file="$(DeviceRegisterDefinitionFile)" gcc_entry_point="Reset_Handler" linker_additional_files="$(StudioDir)/lib/libmem$(LibExt)$(LIB);$(StudioDir)/lib/libmem_loader$(LibExt)$(LIB)" linker_memory_map_file="$(DeviceMemoryMapFile)" linker_section_placement_file="$(ProjectDir)/ram_placement.xml" target_reset_script="Reset();" package_dependencies="CMSIS;libmem_drivers" property_groups_file_path="$(PackagesDir)/libraries/CMSIS_5/propertyGroups.xml" CMSIS_CORE="Yes" project_type="Executable" />
-    <configuration Name="Debug" gcc_debugging_level="Level 3" gcc_optimization_level="None" c_preprocessor_definitions="DEBUG" hidden="Yes" />
-    <configuration Name="Release" gcc_debugging_level="Level 1" gcc_optimization_level="Optimize For Size" c_preprocessor_definitions="NDEBUG" hidden="Yes" />
-    <configuration Name="M481_AP_128" arm_architecture="v7EM" arm_core_type="Cortex-M4" arm_endian="Little" arm_fpu_type="FPv4-SP-D16" arm_linker_heap_size="0" arm_linker_stack_size="512" arm_target_device_name="M481ZE8AE" build_output_file_name="M481_AP_128_Loader.elf" linker_keep_symbols="libmem_crc32" macros="DeviceIncludePath=$(TargetsDir)/M480/CMSIS/Device/M480/Include;DeviceHeaderFile=$(TargetsDir)/M480/CMSIS/Device/M480/Include/M480.h;DeviceMemoryMapFile=$(TargetsDir)/M480/XML/M481ZE8AE_MemoryMap.xml;DeviceRegisterDefinitionFile=$(TargetsDir)/M480/XML/M481_v1_Registers.xml;DeviceSystemFile=$(TargetsDir)/M480/CMSIS/Device/M480/Source/system_M480.c;DeviceFamily=M480;DeviceSubFamily=M480;DeviceFLMSourceFile=M481_AP_128_flm.s" c_preprocessor_definitions="__M481ZE8AE__;__M480_FAMILY;__M480_SUBFAMILY;ARM_MATH_CM4;FLM_ALGORITHM_M481_AP_128" c_user_include_directories="$(DeviceIncludePath);$(TargetsDir)/M480/CMSIS/Device/M480/StdDriver/inc" />
-    <configuration Name="M481_AP_256" arm_architecture="v7EM" arm_core_type="Cortex-M4" arm_endian="Little" arm_fpu_type="FPv4-SP-D16" arm_linker_heap_size="0" arm_linker_stack_size="512" arm_target_device_name="M481ZG8AE" build_output_file_name="M481_AP_256_Loader.elf" linker_keep_symbols="libmem_crc32" macros="DeviceIncludePath=$(TargetsDir)/M480/CMSIS/Device/M480/Include;DeviceHeaderFile=$(TargetsDir)/M480/CMSIS/Device/M480/Include/M480.h;DeviceMemoryMapFile=$(TargetsDir)/M480/XML/M481ZG8AE_MemoryMap.xml;DeviceRegisterDefinitionFile=$(TargetsDir)/M480/XML/M481_v1_Registers.xml;DeviceSystemFile=$(TargetsDir)/M480/CMSIS/Device/M480/Source/system_M480.c;DeviceFamily=M480;DeviceSubFamily=M480;DeviceFLMSourceFile=M481_AP_256_flm.s" c_preprocessor_definitions="__M481ZG8AE__;__M480_FAMILY;__M480_SUBFAMILY;ARM_MATH_CM4;FLM_ALGORITHM_M481_AP_256" c_user_include_directories="$(DeviceIncludePath);$(TargetsDir)/M480/CMSIS/Device/M480/StdDriver/inc" />
-    <configuration Name="M481_AP_512" arm_architecture="v7EM" arm_core_type="Cortex-M4" arm_endian="Little" arm_fpu_type="FPv4-SP-D16" arm_linker_heap_size="0" arm_linker_stack_size="512" arm_target_device_name="M481ZIDAE" build_output_file_name="M481_AP_512_Loader.elf" linker_keep_symbols="libmem_crc32" macros="DeviceIncludePath=$(TargetsDir)/M480/CMSIS/Device/M480/Include;DeviceHeaderFile=$(TargetsDir)/M480/CMSIS/Device/M480/Include/M480.h;DeviceMemoryMapFile=$(TargetsDir)/M480/XML/M481ZIDAE_MemoryMap.xml;DeviceRegisterDefinitionFile=$(TargetsDir)/M480/XML/M481_v1_Registers.xml;DeviceSystemFile=$(TargetsDir)/M480/CMSIS/Device/M480/Source/system_M480.c;DeviceFamily=M480;DeviceSubFamily=M480;DeviceFLMSourceFile=M481_AP_512_flm.s" c_preprocessor_definitions="__M481ZIDAE__;__M480_FAMILY;__M480_SUBFAMILY;ARM_MATH_CM4;FLM_ALGORITHM_M481_AP_512" c_user_include_directories="$(DeviceIncludePath);$(TargetsDir)/M480/CMSIS/Device/M480/StdDriver/inc" />
-    <configuration Name="M481_LD_4" arm_architecture="v7EM" arm_core_type="Cortex-M4" arm_endian="Little" arm_fpu_type="FPv4-SP-D16" arm_linker_heap_size="0" arm_linker_stack_size="512" arm_target_device_name="M483KG8AE2A" build_output_file_name="M481_LD_4_Loader.elf" linker_keep_symbols="libmem_crc32" macros="DeviceIncludePath=$(TargetsDir)/M480/CMSIS/Device/M480/Include;DeviceHeaderFile=$(TargetsDir)/M480/CMSIS/Device/M480/Include/M480.h;DeviceMemoryMapFile=$(TargetsDir)/M480/XML/M483KG8AE2A_MemoryMap.xml;DeviceRegisterDefinitionFile=$(TargetsDir)/M480/XML/M481_v1_Registers.xml;DeviceSystemFile=$(TargetsDir)/M480/CMSIS/Device/M480/Source/system_M480.c;DeviceFamily=M480;DeviceSubFamily=M480;DeviceFLMSourceFile=M481_LD_4_flm.s" c_preprocessor_definitions="__M483KG8AE2A__;__M480_FAMILY;__M480_SUBFAMILY;ARM_MATH_CM4;FLM_ALGORITHM_M481_LD_4" c_user_include_directories="$(DeviceIncludePath);$(TargetsDir)/M480/CMSIS/Device/M480/StdDriver/inc" />
+  <configuration
+    Name="M4xx_AP_128 Debug"
+    inherited_configurations="M4xx_AP_128;Debug" />
+  <configuration
+    Name="M4xx_AP_128 Release"
+    inherited_configurations="M4xx_AP_128;Release" />
+  <project Name="M4xx Loader">
+    <configuration
+      CMSIS_CORE="Yes"
+      Name="Common"
+      arm_library_optimization="Small"
+      arm_linker_treat_warnings_as_errors="No"
+      arm_target_debug_interface_type="ADIv5"
+      batch_build_configurations="M4xx_AP_128 Release"
+      c_preprocessor_definitions="NO_SYSTEM_INIT;NO_VTOR_CONFIG"
+      c_user_include_directories="$(PackagesDir)/libraries/libmem_drivers"
+      debug_register_definition_file="$(DeviceRegisterDefinitionFile)"
+      gcc_entry_point="Reset_Handler"
+      linker_additional_files="$(StudioDir)/lib/libmem$(LibExt)$(LIB);$(StudioDir)/lib/libmem_loader$(LibExt)$(LIB)"
+      linker_memory_map_file="$(DeviceMemoryMapFile)"
+      linker_section_placement_file="$(ProjectDir)/ram_placement.xml"
+      package_dependencies="CMSIS;libmem_drivers"
+      project_type="Executable"
+      property_groups_file_path="$(PackagesDir)/libraries/CMSIS_5/propertyGroups.xml"
+      target_reset_script="Reset();" />
+    <configuration
+      Name="Debug"
+      c_preprocessor_definitions="DEBUG"
+      gcc_debugging_level="Level 3"
+      gcc_optimization_level="None"
+      hidden="Yes" />
+    <configuration
+      Name="M4xx_AP_128"
+      arm_architecture="v7EM"
+      arm_core_type="Cortex-M4"
+      arm_endian="Little"
+      arm_fpu_type="FPv4-SP-D16"
+      arm_linker_heap_size="0"
+      arm_linker_stack_size="512"
+      arm_target_device_name="M433SE8AE"
+      build_output_file_name="M4xx_AP_128_Loader.elf"
+      c_preprocessor_definitions="__M433SE8AE__;__M4xx_FAMILY;__M43x_SUBFAMILY;ARM_MATH_CM4;FLM_ALGORITHM_M4xx_AP_128"
+      c_user_include_directories="$(DeviceIncludePath);$(TargetsDir)/M4xx/CMSIS/StdDriver/M43x/inc"
+      linker_keep_symbols="libmem_crc32"
+      macros="DeviceIncludePath=$(TargetsDir)/M4xx/CMSIS/Device/M43x/Include;DeviceHeaderFile=$(TargetsDir)/M4xx/CMSIS/Device/M43x/Include/M43x.h;DeviceMemoryMapFile=$(TargetsDir)/M4xx/XML/M43x/M433SE8AE_MemoryMap.xml;DeviceRegisterDefinitionFile=$(TargetsDir)/M4xx/XML/M43x/M433_v1_Registers.xml;DeviceSystemFile=$(TargetsDir)/M4xx/CMSIS/Device/M43x/Source/system_M43x.c;DeviceFamily=M4xx;DeviceSubFamily=M43x;DeviceFLMSourceFile=M4xx_AP_128_flm.c" />
+    <configuration
+      Name="Release"
+      c_preprocessor_definitions="NDEBUG"
+      gcc_debugging_level="Level 1"
+      gcc_optimization_level="Optimize For Size"
+      hidden="Yes" />
     <folder Name="CMSIS Files">
+      <file file_name="$(DeviceFLMSourceFile)" />
       <file file_name="$(DeviceHeaderFile)" />
       <file file_name="$(DeviceSystemFile)" />
-      <file file_name="$(DeviceFLMSourceFile)" />
     </folder>
-    <folder Name="Source Files" path="." filter="*.c" />
+    <folder Name="Source Files" filter="*.c" path="." />
     <folder Name="System Files">
-      <file file_name="$(StudioDir)/source/thumb_crt0.s" />
-      <file file_name="$(TargetsDir)/M480/Source/M480_Startup.s" />
       <file file_name="$(PackagesDir)/libraries/libmem_drivers/libmem_flm_driver.c" />
-      <file file_name="$(TargetsDir)/M480/Scripts/M480_Target.js">
+      <file file_name="$(TargetsDir)/M4xx/Source/M4xx_Startup.s" />
+      <file file_name="$(TargetsDir)/M4xx/Scripts/M4xx_Target.js">
         <configuration Name="Common" file_type="Reset Script" />
       </file>
+      <file file_name="$(StudioDir)/source/thumb_crt0.s" />
     </folder>
   </project>
 </solution>
