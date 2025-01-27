@@ -13,7 +13,7 @@
 #include <NuMicro.h>
 #include <libmem_flm_driver.h>
 
-#if defined(FLM_ALGORITHM_M481_AP_128)
+#if defined(FLM_ALGORITHM_M4xx_AP_128)
 
 // M480 128kB Flash AP
 

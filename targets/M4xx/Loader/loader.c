@@ -12,14 +12,13 @@
 #include <libmem.h>
 #include <libmem_loader.h>
 #include <NuMicro.h>
-#include "libmem_m480.h"
+#include "libmem_m4xx.h"
 
 extern uint8_t __RAM_segment_start__;
 extern uint8_t __RAM_segment_used_end__;
 extern uint8_t __RAM_segment_end__;
 
-int
-main(uint32_t flags, uint32_t param)
+int main(uint32_t flags, uint32_t param)
 {
   int res;
   uint32_t fosc = flags & LIBMEM_RPC_LOADER_FLAG_PARAM ? param : 0;

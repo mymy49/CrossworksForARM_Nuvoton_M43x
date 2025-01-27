@@ -56,7 +56,12 @@
       <file file_name="$(DeviceHeaderFile)" />
       <file file_name="$(DeviceSystemFile)" />
     </folder>
-    <folder Name="Source Files" filter="*.c" path="." />
+    <folder
+      Name="Source Files"
+      exclude="M4xx_AP_128_flm.c"
+      filter="*.c"
+      path="."
+      recurse="No" />
     <folder Name="System Files">
       <file file_name="$(PackagesDir)/libraries/libmem_drivers/libmem_flm_driver.c" />
       <file file_name="$(TargetsDir)/M4xx/Source/M4xx_Startup.s" />
