@@ -1,5 +1,6 @@
 <!DOCTYPE CrossStudio_Project_File>
 <solution Name="Loader" version="2" target="8">
+  <configuration Name="Common" gcc_debugging_level="Level 3" />
   <configuration
     Name="M4xx_AP_128 Debug"
     inherited_configurations="M4xx_AP_128;Debug" />
@@ -37,8 +38,8 @@
       arm_core_type="Cortex-M4"
       arm_endian="Little"
       arm_fpu_type="FPv4-SP-D16"
-      arm_linker_heap_size="0"
-      arm_linker_stack_size="512"
+      arm_linker_heap_size="32768"
+      arm_linker_stack_size="4096"
       arm_target_device_name="M433SE8AE"
       build_output_file_name="M4xx_AP_128_Loader.elf"
       c_preprocessor_definitions="__M433SE8AE__;__M4xx_FAMILY;__M43x_SUBFAMILY;ARM_MATH_CM4;FLM_ALGORITHM_M4xx_AP_128"

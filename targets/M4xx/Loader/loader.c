@@ -18,6 +18,8 @@ extern uint8_t __RAM_segment_start__;
 extern uint8_t __RAM_segment_used_end__;
 extern uint8_t __RAM_segment_end__;
 
+//uint16_t data[0x800];
+
 int main(uint32_t flags, uint32_t param)
 {
   int res;
@@ -31,6 +33,13 @@ int main(uint32_t flags, uint32_t param)
 
   /* Register M480 internal FLASH driver */
   res = libmem_m480_register_internal_flash_driver(&flash1_handle, fosc);
+	
+	//for(uint16_t i = 0 ; i < 0x800; i++)
+	//	data[i] = i;
+
+ // libmem_erase((uint8_t *)(0x0000), 0x1000 * 2, 0, 0);
+
+ // libmem_write((uint8_t *)(0x0000), (uint8_t *)data, 0x1000);
 
   /* Start loader */
   if (res == LIBMEM_STATUS_SUCCESS)

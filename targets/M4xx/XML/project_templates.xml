@@ -146,9 +146,6 @@
 				<property name="default_const_section" value=".init_rodata" />
 			</file>
 		</folder>
-		<folder name="StdDriver Files">
-			<file name="$(TargetsDir)/M4xx/CMSIS/StdDriver/M43x/src/clk.c" expand="no" />
-		</folder>
 		<folder name="System Files">
 			<file name="$(StudioDir)/source/thumb_crt0.s" expand="no">
 				<property name="c_preprocessor_definitions" value="" />
@@ -199,11 +196,9 @@
 				<property name="file_type" value="Reset Script" />
 			</file>
 		</folder>
-		<folder name="Source Files" >
-			<folder Name="app" exclude="" filter="" path="app" recurse="Yes" >
-			</folder>
-			<folder Name="yss" exclude="" filter="" path="yss" recurse="Yes" >
-			</folder>
+		<folder name="APP Source Files" path="app" filter="*.c;*.cpp;*.h;*.s" recurse="yes">
+		</folder>
+		<folder name="yss OS Source Files" path="yss" filter="*.c;*.cpp;*.h;*.s" recurse="yes">
 		</folder>
 		<folder name="System Files">
 			<file name="$(StudioDir)/source/thumb_crt0.s" expand="no">
