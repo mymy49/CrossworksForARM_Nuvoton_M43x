@@ -31,16 +31,9 @@ int main(uint32_t flags, uint32_t param)
   if ((flags & LIBMEM_RPC_LOADER_FLAG_PRESERVE_STATE) == 0)
     SystemInit();
 
-  /* Register M480 internal FLASH driver */
+  /* Register M43x internal FLASH driver */
   res = libmem_m480_register_internal_flash_driver(&flash1_handle, fosc);
 	
-	//for(uint16_t i = 0 ; i < 0x800; i++)
-	//	data[i] = i;
-
- // libmem_erase((uint8_t *)(0x0000), 0x1000 * 2, 0, 0);
-
- // libmem_write((uint8_t *)(0x0000), (uint8_t *)data, 0x1000);
-
   /* Start loader */
   if (res == LIBMEM_STATUS_SUCCESS)
     res = libmem_rpc_loader_start(&__RAM_segment_used_end__, &__RAM_segment_end__ - 1);

@@ -23,9 +23,6 @@ void executeCommand(uint8_t cmd)
 	while(FMC->ISPTRG & FMC_ISPTRG_ISPGO_Msk)
 		;
 
-	for(volatile uint32_t i = 0; i < 100; i++)
-		;
-
 	FMC->ISPCTL &= ~FMC_ISPCTL_APUEN_Msk;
 }
 
@@ -44,12 +41,6 @@ int Init(unsigned long adr, unsigned long clk, unsigned long fnc)
 	for(volatile uint32_t i = 0; i < 0x80; i++)
 		;
 
-	// 의미를 모르지만 r9에 초기값이 없더라도 4를 더한 번지에 SYS->CSERVER 값의 저장이 필요함
-	// r9는 아마도 JTAG Adapter가 저장하는 것으로 추측
-	reg = 4; // 의미를 모르지만 4가 들어가야함
-	asm("add %0, r9" : "=r" (reg) :);
-	*((uint32_t*)reg) = SYS->CSERVER;
-	
 	// PLL 주파수를 144 MHz로 변경
 	CLK->PLLCTL = 0x84422; 
 	
@@ -111,14 +102,14 @@ int EraseChip(void)
 
 int EraseSector(unsigned long adr)
 {
-	//debug_printf("EraseSector = 0x%08X\n", adr);
+	while(FMC->MPSTS & FMC_MPSTS_MPBUSY_Msk)
+		;
+	
+	FMC->ISPCTL |= FMC_ISPCTL_ISPFF_Msk;
 
 	FMC->ISPADDR = adr;
 
 	executeCommand(FMC_ISPCMD_FLASH_PAGE_ERASE);
-
-	for(volatile uint32_t i = 0; i < 1000000; i++)
-		;
 	
 	return 0;
 }
@@ -127,8 +118,6 @@ int ProgramPage(unsigned long adr, unsigned long sz, unsigned char *buf)
 {
 	uint32_t *src = (uint32_t*)buf;
 	uint32_t *addr = (uint32_t*)adr;
-
-	//debug_printf("ProgramPage = 0x%08X, 0x%08X, 0x%08X\n", adr, sz, buf);
 
 	sz /= 4;
 
@@ -139,9 +128,6 @@ int ProgramPage(unsigned long adr, unsigned long sz, unsigned char *buf)
 
 		executeCommand(FMC_ISPCMD_FLASH_32BIT_PROGRAM);
 	}
-
-	for(volatile uint32_t i = 0; i < 1000000; i++)
-		;
 
     return 0;
 }

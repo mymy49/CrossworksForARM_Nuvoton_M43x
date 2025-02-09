@@ -13,9 +13,9 @@
 #include <NuMicro.h>
 #include <libmem_flm_driver.h>
 
-#if defined(FLM_ALGORITHM_M4xx_AP_128)
+#if defined(FLM_ALGORITHM_M43x_AP_128)
 
-// M480 128kB Flash AP
+// M43x 128kB Flash AP
 
 #define FLM_START_ADDRESS 0x00000000
 #define FLM_SIZE 0x00020000
